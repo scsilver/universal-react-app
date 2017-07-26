@@ -1,0 +1,6 @@
+sketch -npm run render
+nativeApp
+      react-native run-ios
+      react-native run-android
+webApp
+    npm start -s
