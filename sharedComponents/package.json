@@ -14,5 +14,9 @@
     "react-primitives": "^0.4.3",
     "react-sketchapp": "^0.11.6",
     "react-test-renderer": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   }
 }

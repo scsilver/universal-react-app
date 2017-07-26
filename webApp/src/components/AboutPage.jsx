@@ -1,12 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router';
 import '../styles/about-page.css';
+import { View, Text, Image, StyleSheet } from 'react-primitives';
 
+import HelloWorld from '../../../sharedComponents/HelloWorld.jsx'
 // Since this component is simple and static, there's no parent container for it.
 const AboutPage = () => {
   return (
     <div>
       <h2 className="alt-header">About</h2>
+               <View>
+                 <HelloWorld />
+               </View>
+
       <p>
         This example app is part of the <a href="https://github.com/coryhouse/react-slingshot">React-Slingshot
         starter kit</a>.
