@@ -9,11 +9,13 @@
   "author": "Scott Silverstein",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-primitives": "^0.4.3",
     "react-sketchapp": "^0.11.6",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
