@@ -9,13 +9,18 @@
   "author": "Scott Silverstein",
   "license": "ISC",
   "dependencies": {
+    "@google/maps": "^0.4.3",
+    "fetch": "^1.1.0",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-google-maps": "^7.2.0",
     "react-primitives": "^0.4.3",
     "react-sketchapp": "^0.11.6",
     "react-test-renderer": "^15.6.1",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.1",
+    "superagent": "^3.5.2",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

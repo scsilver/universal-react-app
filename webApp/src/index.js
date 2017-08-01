@@ -18,6 +18,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 
 render(
+
   <AppContainer>
     <Root store={store} history={history} />
   </AppContainer>,
