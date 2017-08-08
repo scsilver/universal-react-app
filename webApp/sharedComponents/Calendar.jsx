@@ -58,8 +58,40 @@ class Calendar extends Component {
     this.handleSearchOffClick = this.handleSearchOffClick.bind(this);
     this.handleMapCenterChanged = this.handleMapCenterChanged.bind(this);
     this.handleMapMounted = this.handleMapMounted.bind(this);
+    this.suggestedPlacesRequest = this.suggestedPlacesRequest.bind(this);
+    this.onPlaceClick = this.onPlaceClick.bind(this);
 
-    this.tripRequest = this.tripRequest.bind(this);
+    // const suggestions = {
+    //   planSuggestions: [plan:{}],
+    //   tripSuggestions: [trips: string],
+    //   placeOfStaySuggestions: Place
+    // }
+
+    // const journey = {
+    //   trips: [],
+    //   startDate: new Date(),
+    //   endDate: new Date(),
+    //    PlacesofStay: [googlePlace]
+    //
+
+    //   days: [
+    //   morningPlaceOfStay: googlePlace,
+    //   eveningPlaceOfStay: googlePlace,
+
+    //   plans: [{
+    //     place: googlePlace
+    //     time: newDate
+    //     planType: oneOF('breakfast, brunch, lunch, happyhour, dinner, evening, recreation... ')
+
+    //   }]
+    //   planTravel: {
+    //     legs,
+    //   }
+
+    //   ]
+
+    //   ]
+    // }
     // const trip = {
     //   filters: {
     //     route: number
@@ -76,6 +108,7 @@ class Calendar extends Component {
     //   routes: []
     // };
     this.state = {
+      suggestions: { placeSuggestions: [] },
       routesPanel: {
         expanded: true
       },
@@ -104,8 +137,21 @@ class Calendar extends Component {
   handleMapMounted(map) {
     this._map = map;
   }
-  tripRequest({ state }) {}
-
+  suggestedPlacesRequest({ location }) {
+    request
+      .get(
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.lat +
+          "," +
+          location.lng}&radius=5000&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`
+      )
+      .end((err, res) => {
+        if (!err) {
+          this.setState({
+            suggestions: { placeSuggestions: res.body.results }
+          });
+        }
+      });
+  }
   handleOnChange({ value, inputType }) {
     let nextInputs = {
       ...this.state.inputs
@@ -203,10 +249,14 @@ class Calendar extends Component {
         }
       };
       DirectionsService.route(queryObj, (res, status) => {
+        const suggestionLocation = {
+          lat: res.routes[0].legs[0].end_location.lat(),
+          lng: res.routes[0].legs[0].end_location.lng()
+        };
+
         const arrivalTime = lodash.get(
           res,
-          `.routes[0].legs[${res.routes[0].legs.length -
-            1}].arrival_time.value`,
+          `.routes[0].legs[0].arrival_time.value`,
           ""
         );
         newTrip.routes = res.routes;
@@ -216,6 +266,8 @@ class Calendar extends Component {
           destination: "",
           departureTime: moment(arrivalTime)
         };
+
+        this.suggestedPlacesRequest({ location: suggestionLocation });
 
         this.setState({
           spinner: false,
@@ -287,9 +339,14 @@ class Calendar extends Component {
     //   center: nextCenter
     // });
   }
+  onPlaceClick({ place }) {
+    const nextInputs = { ...this.state.inputs, destination: place.name };
+    this.setState({ inputs: nextInputs });
+  }
   render() {
     const { days } = this.props;
     const {
+      suggestions,
       routes,
       map: { center },
       inputs: { origin, destination },
@@ -322,6 +379,8 @@ class Calendar extends Component {
           // Pass the map reference here as props
           googleMapURL={googleMapURL}
           directions={directions}
+          placeSuggestions={suggestions.placeSuggestions}
+          suggestedMarkerClick={this.onPlaceClick}
         />
         {this.state.spinner &&
           <View style={{ position: "relative", height: "0px" }}>
@@ -335,7 +394,10 @@ class Calendar extends Component {
               }}
             />
           </View>}
-
+        <PlaceSuggestionsPanel
+          onImageClick={this.onPlaceClick}
+          placeSuggestions={suggestions.placeSuggestions}
+        />
         <SearchPanel
           expanded={searchPanel.expanded}
           onClick={event => this.handleSearchOnClick({ event })}
@@ -454,7 +516,38 @@ class Calendar extends Component {
     );
   }
 }
-
+class PlaceSuggestionsPanel extends Component {
+  render() {
+    const { placeSuggestions, onImageClick } = this.props;
+    return (
+      <View
+        style={{
+          top: "50px",
+          position: "absolute",
+          flex: 1,
+          display: "flex",
+          flexDirection: "row",
+          overflowX: "scroll",
+          width: "100%"
+        }}
+      >
+        {placeSuggestions.map(place => {
+          const width =
+            100 * place.photos[0].height / place.photos[0].width + "px";
+          return (
+            <Image
+              source={`https://maps.googleapis.com/maps/api/place/photo?maxheight=100&photoreference=${place
+                .photos[0]
+                .photo_reference}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`}
+              style={{ height: "100px", width: width, margin: "5px" }}
+              onClick={() => onImageClick({ place })}
+            />
+          );
+        })}
+      </View>
+    );
+  }
+}
 class RoutesPanel extends Component {
   render() {
     const { expanded, onClick, trips } = this.props;
@@ -612,6 +705,13 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
           directions={d}
         />
       )}
+    {props.placeSuggestions &&
+      props.placeSuggestions.map(place =>
+        <Marker
+          position={place.geometry.location}
+          onClick={() => props.suggestedMarkerClick({ place })}
+        />
+      )}
   </GoogleMap>
 );
 class StepList extends Component {
@@ -662,8 +762,10 @@ class TripList extends Component {
             >
               <TripTitle trip={trip} />
               <TripDetails trip={trip} />
-              {trip.routes[trip.filters.route].legs.map((leg, index) => {
-                return <Leg leg={leg} index={index} trip={trip} />;
+              {trip.routes[
+                trip.filters.route
+              ].legs[0].steps.map((step, index) => {
+                return <Step step={step} index={index} trip={trip} />;
               })}
             </View>
           );
@@ -673,9 +775,9 @@ class TripList extends Component {
   }
 }
 
-class Leg extends Component {
+class Step extends Component {
   render() {
-    const { leg, trip, index } = this.props;
+    const { step, trip, index } = this.props;
     return (
       <View
         style={{
@@ -691,7 +793,7 @@ class Leg extends Component {
         <View
           style={{
             display: "inline-block",
-            backgroundColor: "white",
+            backgroundColor: trip.tripSettings.color,
             flexDirection: "column",
             justifyContent: "center",
             flex: 0.2
@@ -701,10 +803,12 @@ class Leg extends Component {
             style={{
               display: "block",
               flex: 1,
-              textAlign: "center"
+              textAlign: "center",
+              color: "white",
+              paddingTop: "10px"
             }}
           >
-            Leg{" "}
+            Step{" "}
           </Text>
           <Text
             style={{
@@ -712,18 +816,76 @@ class Leg extends Component {
               textAlign: "center",
               flex: 1,
               fontSize: "30px",
-              lineHeight: "50px"
+              lineHeight: "50px",
+              color: "white"
             }}
           >
             {index + 1}
           </Text>
         </View>
-        <StepList steps={leg.steps} trip={trip} />
+        <View
+          style={{
+            display: "inline-block",
+            backgroundColor: "white",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            flex: 0.8,
+            color: trip.tripSettings.color
+          }}
+        >
+          <StepDetails step={step} trip={trip} />
+        </View>
       </View>
     );
   }
 }
+class StepDetails extends Component {
+  render() {
+    const { step, trip } = this.props;
+    const width = step.instructions.split("").length * 5;
+    return (
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-end",
+          flex: 1,
+          height: "100%",
+          minWidth: `${width}px`
+        }}
+      >
+        <Text
+          style={{
+            display: "flex",
+            textAlign: "right",
+            fontWeight: "800",
+            fontSize: 16,
+            flex: 1
+          }}
+        >
+          {step.instructions}
+          {"   "}
+        </Text>
 
+        <Text
+          style={{
+            display: "flex"
+          }}
+        >
+          {step.distance.text}
+        </Text>
+
+        <Text
+          style={{
+            display: "flex"
+          }}
+        >
+          {step.duration.text}
+        </Text>
+      </View>
+    );
+  }
+}
 class TripTitle extends Component {
   render() {
     const { trip } = this.props;
