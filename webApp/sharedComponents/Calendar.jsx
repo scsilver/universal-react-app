@@ -138,11 +138,14 @@ class Calendar extends Component {
     this._map = map;
   }
   suggestedPlacesRequest({ location }) {
+    debugger;
     request
       .get(
         `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.lat +
           "," +
-          location.lng}&radius=5000&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`
+          location.lng}&radius=${(591657550.5 / 2) ^
+          (this._map.getZoom() -
+            1)}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`
       )
       .end((err, res) => {
         if (!err) {
@@ -511,7 +514,6 @@ class Calendar extends Component {
         >
           <TripList trips={trips} />
         </RoutesPanel>
-        <View style={{ height: "200px" }} />
       </View>
     );
   }
@@ -522,7 +524,7 @@ class PlaceSuggestionsPanel extends Component {
     return (
       <View
         style={{
-          top: "50px",
+          bottom: "0",
           position: "absolute",
           flex: 1,
           display: "flex",
@@ -532,17 +534,21 @@ class PlaceSuggestionsPanel extends Component {
         }}
       >
         {placeSuggestions.map(place => {
-          const width =
-            100 * place.photos[0].height / place.photos[0].width + "px";
-          return (
-            <Image
-              source={`https://maps.googleapis.com/maps/api/place/photo?maxheight=100&photoreference=${place
-                .photos[0]
-                .photo_reference}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`}
-              style={{ height: "100px", width: width, margin: "5px" }}
-              onClick={() => onImageClick({ place })}
-            />
-          );
+          if (place.photos) {
+            const width =
+              100 * place.photos[0].height / place.photos[0].width + "px";
+            return (
+              <Image
+                source={`https://maps.googleapis.com/maps/api/place/photo?maxheight=100&photoreference=${place
+                  .photos[0]
+                  .photo_reference}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`}
+                style={{ height: "100px", width: width, margin: "5px" }}
+                onClick={() => onImageClick({ place })}
+              />
+            );
+          } else {
+            return null;
+          }
         })}
       </View>
     );
@@ -609,14 +615,13 @@ class RoutesPanel extends Component {
 class SearchPanel extends Component {
   render() {
     const { expanded, onClick } = this.props;
-    const bottomOffset = expanded ? "70px" : "70px";
     return (
       <View
         onClick={onClick}
         style={{
-          left: "50px",
-          position: "relative",
-          bottom: bottomOffset,
+          left: "200px",
+          position: "absolute",
+          top: "20px",
           display: "inline-block",
           boxSizing: "border-box",
           zIndex: 999
