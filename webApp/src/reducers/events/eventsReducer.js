@@ -11,6 +11,9 @@ const initialState = {
 };
 export default (state = initialState, action) => {
   switch (action.type) {
+    case actionTypes.TRIPS_CREATE_TRIP:
+      return { ...state, trips: tripsReducer(state.trips, action) };
+
     case actionTypes.TRIP_DIRECTIONS_REQUEST:
       return { ...state };
 

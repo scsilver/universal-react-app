@@ -6,8 +6,9 @@ import Map from "./JourneyMap";
 //
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import * as actions from "../../src/actions/journeyActions";
-
+import actions from "../../src/actions/journeyActions";
+import SearchPanel from "./Trips/SearchPanel";
+import TripPanel from "./Trips/TripPanel";
 const tripDirectionsSelector = ({ trips }) => {
   let directions = [];
   trips.map(trip =>
@@ -47,19 +48,22 @@ export const Journey = props => {
         mapElement={
           <div style={{ height: window.innerHeight, width: "100%" }} />
         }
-        //        onMapLoad={this.handleMapMounted}
+        //  onMapLoad={this.handleMapMounted}
         defaultZoom={3}
         defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
         center={map.center}
-        // onCenterChanged={this.handleMapCenterChanged}
+        onCenterChanged={() => {}}
         googleMapURL={googleMapURL}
         directions={directions}
         placeSuggestions={suggestions.trips}
         //suggestedMarkerClick={this.onPlaceClick}
       />
+      <SearchPanel />
+      <TripPanel events={events} />
     </View>
   );
 };
+
 //         <PlaceSuggestionsPanel
 //        ;
 //   }
@@ -87,7 +91,9 @@ export const Journey = props => {
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = dispatch => {
-  actions: bindActionCreators(actions, dispatch);
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Journey);

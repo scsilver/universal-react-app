@@ -7,7 +7,8 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.TRIPS_CREATE_TRIP:
       {
-        const createdTrip = tripReducer(undefined, action);
+        debugger;
+        const createdTrip = tripReducer(null, action);
         const newState = [...state, createdTrip];
         return [...newState];
       }

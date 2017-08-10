@@ -1,3 +1,7 @@
+import React, { Component } from "react";
+
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 class PlaceSuggestionsPanel extends Component {
   render() {
     const { placeSuggestions, onImageClick } = this.props;
@@ -34,3 +38,19 @@ class PlaceSuggestionsPanel extends Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    suggestionsPanel: state.journey.panels.suggestionsPanel,
+    placeSuggestionsPanel: state.journey.suggestions.placeSuggestions
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(
+  PlaceSuggestionsPanel
+);

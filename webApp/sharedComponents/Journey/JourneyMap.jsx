@@ -22,7 +22,6 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
           options={{
             preserveViewport: true,
             polylineOptions: {
-              strokeColor: d.color,
               strokeOpacity: 0.7,
               strokeWeight: 5
             }

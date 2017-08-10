@@ -1,4 +1,8 @@
-class StepList extends Component {
+import React, { Component } from "react";
+
+import { View, Text, Image, StyleSheet } from "react-primitives";
+
+export default class StepList extends Component {
   static get defaultProps() {
     return {
       steps: []
@@ -11,8 +15,7 @@ class StepList extends Component {
         style={{
           display: "inline-block",
           flex: 0.8,
-          padding: "5px",
-          backgroundColor: trip.tripSettings.color
+          padding: "5px"
         }}
       >
         {steps.map(step => {

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import { View, Text } from "react-primitives";
-export default class TripDetails extends Component {
+
+export default class TripTitle extends Component {
   render() {
     const { trip } = this.props;
     const legs = trip.routes[trip.filters.route].legs;
@@ -15,10 +18,10 @@ export default class TripDetails extends Component {
         }}
       >
         <Text style={{ display: "inline-block", float: "left" }}>
-          {firstLeg.departure_time.text}
+          {firstLeg.start_address}
         </Text>
         <Text style={{ display: "inline-block", float: "right" }}>
-          {lastLeg.arrival_time.text}
+          {lastLeg.end_address}
         </Text>
       </View>
     );

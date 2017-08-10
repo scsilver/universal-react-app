@@ -1,6 +1,13 @@
-class Step extends Component {
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import StepDetails from "./StepDetails";
+import { View, Text, Image, StyleSheet } from "react-primitives";
+
+export default class Step extends Component {
   render() {
     const { step, trip, index } = this.props;
+    debugger;
     return (
       <View
         style={{
@@ -16,7 +23,6 @@ class Step extends Component {
         <View
           style={{
             display: "inline-block",
-            backgroundColor: trip.tripSettings.color,
             flexDirection: "column",
             justifyContent: "center",
             flex: 0.2
@@ -52,8 +58,7 @@ class Step extends Component {
             backgroundColor: "white",
             flexDirection: "column",
             justifyContent: "flex-start",
-            flex: 0.8,
-            color: trip.tripSettings.color
+            flex: 0.8
           }}
         >
           <StepDetails step={step} trip={trip} />
