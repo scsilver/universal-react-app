@@ -1,37 +1,57 @@
 import React, { Component } from "react";
+import actions from "../../../actions/journeyActions";
+import { View, Text, Image, StyleSheet } from "react-primitives";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 class PlaceSuggestionsPanel extends Component {
+  handleImageClick({ place }) {
+    this.props.actions.searchPanelInputsUpdateAutoSuggest({
+      value: place.name,
+      inputType: "destination",
+      autoSuggest: {}
+    });
+  }
   render() {
-    const { placeSuggestions, onImageClick } = this.props;
+    const { suggestions, onImageClick } = this.props;
+
+    let placeSuggestions = [];
+    Object.keys(suggestions).map(
+      suggestionType =>
+        (placeSuggestions = [
+          ...placeSuggestions,
+          ...suggestions[suggestionType]
+        ])
+    );
     return (
       <View
         style={{
-          bottom: "0",
           position: "absolute",
           flex: 1,
           display: "flex",
-          flexDirection: "row",
-          overflowX: "scroll",
-          width: "100%"
+          flexDirection: "column",
+          overflowY: "scroll",
+          width: "100%",
+          height: "80%",
+          left: "0"
         }}
       >
-        {placeSuggestions.map(place => {
+        {suggestions.trips.map(place => {
           if (place.photos) {
             const width =
               100 * place.photos[0].height / place.photos[0].width + "px";
             return (
               <Image
+                key={place.photos[0].photo_reference}
                 source={`https://maps.googleapis.com/maps/api/place/photo?maxheight=100&photoreference=${place
                   .photos[0]
                   .photo_reference}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`}
                 style={{ height: "100px", width: width, margin: "5px" }}
-                onClick={() => onImageClick({ place })}
+                onClick={() => this.handleImageClick({ place })}
               />
             );
           } else {
-            return null;
+            return <View />;
           }
         })}
       </View>
@@ -42,7 +62,7 @@ class PlaceSuggestionsPanel extends Component {
 const mapStateToProps = state => {
   return {
     suggestionsPanel: state.journey.panels.suggestionsPanel,
-    placeSuggestionsPanel: state.journey.suggestions.placeSuggestions
+    suggestions: state.journey.suggestions
   };
 };
 

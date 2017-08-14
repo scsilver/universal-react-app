@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Image, StyleSheet } from "react-primitives";
 import Autocomplete from "react-autocomplete";
-import actions from "../../../src/actions/journeyActions";
+import actions from "../../../actions/journeyActions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 class TripSearchPanel extends Component {
@@ -16,9 +16,14 @@ class TripSearchPanel extends Component {
       inputType,
       autoSuggest
     });
+    this.props.actions.searchPanelInputsUpdateAutoSuggestRequest({
+      value,
+      inputType,
+      autoSuggest
+    });
   }
   handleOnKey({ event, inputs }) {
-    if ((event.key = "Enter")) {
+    if (event.key == "Enter") {
       this.props.actions.tripRequest({ inputs });
     }
   }
@@ -36,7 +41,6 @@ class TripSearchPanel extends Component {
       style: styles.autocomplete.styleProp,
       onKeyPress: event => this.handleOnKey({ event, inputs })
     };
-    debugger;
 
     return (
       <View onClick={onClick} style={styles.tripSearchPanel}>
@@ -51,9 +55,7 @@ class TripSearchPanel extends Component {
             <View
               style={{
                 ...styles.autocomplete.suggestions,
-                backgroundColor: isHighlighted
-                  ? "rgba(255,255,255,.8)"
-                  : "rgba(255,255,255,.4)"
+                backgroundColor: "white"
               }}
             >
               {item.text}
@@ -65,7 +67,6 @@ class TripSearchPanel extends Component {
               autoSuggest
             })}
           onSelect={value => {
-            debugger;
             this.handleOnChange({ value, inputType: "origin", autoSuggest });
           }}
         />
@@ -80,9 +81,7 @@ class TripSearchPanel extends Component {
             <View
               style={{
                 ...styles.autocomplete.suggestions,
-                backgroundColor: isHighlighted
-                  ? "rgba(255,255,255,.8)"
-                  : "rgba(255,255,255,.4)"
+                backgroundColor: "white"
               }}
             >
               {item.text}
@@ -105,7 +104,9 @@ class TripSearchPanel extends Component {
   }
 }
 const mapStateToProps = state => {
-  return { searchPanel: state.journey.panels.searchPanel };
+  return {
+    searchPanel: state.journey.panels.searchPanel
+  };
 };
 
 const mapDispatchToProps = dispatch => {
@@ -147,7 +148,6 @@ const styles = {
     },
     suggestions: {
       padding: "5px",
-      color: "black",
 
       zIndex: 99
     }

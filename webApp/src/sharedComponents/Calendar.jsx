@@ -13,13 +13,14 @@ import request from "superagent";
 import moment from "moment";
 import Autocomplete from "react-autocomplete";
 import lodash from "lodash";
-const blue = "#324D5C";
-const green = "#46B29D";
-const yellow = "#F0CA4D";
-const orange = "#E37B40";
-const red = "#DE5B49";
+const blue = "#1A4F63";
+const green = "#72B556";
+const yellow = "#FFC628";
+const orange = "#FC643D";
+const teal = "#068587";
+const red = "#FC643D";
 const colorGenerator = ({ index }) => {
-  const colors = [blue, green, yellow, orange, red];
+  const colors = [blue, teal, green, yellow, orange, red];
   return colors[index];
 };
 const tripDirectionsSelector = ({ trips }) => {
@@ -138,7 +139,6 @@ class Calendar extends Component {
     this._map = map;
   }
   suggestedPlacesRequest({ location }) {
-    debugger;
     request
       .get(
         `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.lat +

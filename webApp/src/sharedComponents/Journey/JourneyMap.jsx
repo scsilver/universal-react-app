@@ -19,9 +19,10 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
     {props.directions &&
       props.directions.map(d =>
         <DirectionsRenderer
+          key={d.request.origin + "_" + d.request.destination}
           options={{
-            preserveViewport: true,
             polylineOptions: {
+              strokeColor: d.color,
               strokeOpacity: 0.7,
               strokeWeight: 5
             }
@@ -29,13 +30,14 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
           directions={d}
         />
       )}
-    {props.placeSuggestions &&
+    {/* {props.placeSuggestions &&
       props.placeSuggestions.map(place =>
         <Marker
+        
           position={place.geometry.location}
           onClick={() => props.suggestedMarkerClick({ place })}
         />
-      )}
+      )} */}
   </GoogleMap>
 );
 export default GettingStartedGoogleMap;

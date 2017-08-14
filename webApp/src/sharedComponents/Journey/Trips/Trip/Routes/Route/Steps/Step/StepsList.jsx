@@ -20,7 +20,7 @@ export default class StepList extends Component {
       >
         {steps.map(step => {
           return (
-            <Text style={styles.stepListText}>
+            <Text key={step.instructions} style={styles.stepListText}>
               {step.instructions}
             </Text>
           );

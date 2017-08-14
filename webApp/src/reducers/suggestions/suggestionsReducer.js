@@ -11,6 +11,9 @@ const initialState = {
 };
 export default (state = initialState, action) => {
   switch (action.type) {
+    case actionTypes.SUGGESTED_TRIPS_REQUEST:
+      return { ...state, trips: action.trips };
+
     default:
       return state;
   }

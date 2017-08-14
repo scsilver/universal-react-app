@@ -7,7 +7,6 @@ import { View, Text, Image, StyleSheet } from "react-primitives";
 export default class Step extends Component {
   render() {
     const { step, trip, index } = this.props;
-    debugger;
     return (
       <View
         style={{

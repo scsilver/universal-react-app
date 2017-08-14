@@ -1,14 +1,26 @@
 import actionTypes from "../../../constants/actionTypes";
 
 import tripReducer from "./trip/tripReducer";
-
+const blue = "#1A4F63";
+const green = "#72B556";
+const yellow = "#FFC628";
+const orange = "#FC643D";
+const teal = "#068587";
+const red = "#FC643D";
+const colorGenerator = ({ index }) => {
+  const colors = [blue, teal, green, yellow, orange, red];
+  return colors[index];
+};
 const initialState = [];
 export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.TRIPS_CREATE_TRIP:
       {
-        debugger;
-        const createdTrip = tripReducer(null, action);
+        const newTripId = state.length;
+        const createdTrip = tripReducer(
+          { id: newTripId, color: colorGenerator({ index: newTripId }) },
+          action
+        );
         const newState = [...state, createdTrip];
         return [...newState];
       }

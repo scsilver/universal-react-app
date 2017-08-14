@@ -14,13 +14,28 @@ export default class TripTitle extends Component {
         style={{
           display: "inline-block",
           backgroundColor: "white",
-          padding: "5px"
+          padding: "5px",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between"
         }}
       >
-        <Text style={{ display: "inline-block", float: "left" }}>
+        <Text
+          style={{
+            display: "inline-block",
+            fontSize: "16px",
+            fontWeight: "700"
+          }}
+        >
           {firstLeg.start_address}
         </Text>
-        <Text style={{ display: "inline-block", float: "right" }}>
+        <Text
+          style={{
+            display: "inline-block",
+            fontSize: "16px",
+            fontWeight: "700"
+          }}
+        >
           {lastLeg.end_address}
         </Text>
       </View>
