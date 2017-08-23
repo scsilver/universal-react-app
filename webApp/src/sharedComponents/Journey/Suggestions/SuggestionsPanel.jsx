@@ -13,14 +13,15 @@ class PlaceSuggestionsPanel extends Component {
     });
   }
   render() {
-    const { suggestions, onImageClick } = this.props;
+    const { suggestions: { trips }, onImageClick } = this.props;
 
     let placeSuggestions = [];
-    Object.keys(suggestions).map(
+    const suggestionsObj = { trips };
+    Object.keys(suggestionsObj).map(
       suggestionType =>
         (placeSuggestions = [
           ...placeSuggestions,
-          ...suggestions[suggestionType]
+          ...suggestionsObj[suggestionType]
         ])
     );
     return (
@@ -31,22 +32,24 @@ class PlaceSuggestionsPanel extends Component {
           display: "flex",
           flexDirection: "column",
           overflowY: "scroll",
-          width: "100%",
-          height: "80%",
-          left: "0"
+          height: "70%",
+          top: "100px",
+          left: "0",
+          overflowScrolling: "touch",
+          WebkitOverflowScrolling: "touch"
         }}
       >
-        {suggestions.trips.map(place => {
+        {suggestionsObj.trips.map(place => {
           if (place.photos) {
-            const width =
-              100 * place.photos[0].height / place.photos[0].width + "px";
+            const height =
+              100 * place.photos[0].width / place.photos[0].height + "px";
             return (
               <Image
                 key={place.photos[0].photo_reference}
                 source={`https://maps.googleapis.com/maps/api/place/photo?maxheight=100&photoreference=${place
                   .photos[0]
                   .photo_reference}&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`}
-                style={{ height: "100px", width: width, margin: "5px" }}
+                style={{ height: height, width: "100px", margin: "5px" }}
                 onClick={() => this.handleImageClick({ place })}
               />
             );

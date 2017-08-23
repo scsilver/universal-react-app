@@ -35,9 +35,20 @@ class Journey extends Component {
   constructor(props) {
     super(props);
     this.handleMapMounted = this.handleMapMounted.bind(this);
+    this.handleMapClick = this.handleMapClick.bind(this);
+    this.handleCenterChanged = this.handleCenterChanged.bind(this);
+  }
+  handleMapClick(event) {
+    event.preventPropogation();
   }
   handleMapMounted(map) {
     this._map = map;
+  }
+  handleCenterChanged() {
+    const bounds = this._map.getBounds().toJSON();
+
+    const zoom = { level: this._map.getZoom() };
+    this.props.actions.citiesSuggestionsRequest({ bounds, zoom });
   }
   render() {
     const {
@@ -60,10 +71,11 @@ class Journey extends Component {
             <div style={{ height: window.innerHeight, width: "100%" }} />
           }
           onMapLoad={this.handleMapMounted}
+          onMapClick={event => this.handleMapClick(event)}
           defaultZoom={3}
           defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
           center={map.center}
-          onCenterChanged={() => {}}
+          onCenterChanged={this.handleCenterChanged}
           googleMapURL={googleMapURL}
           directions={directions}
           placeSuggestions={suggestions.trips}

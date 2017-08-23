@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text } from "react-primitives";
+import moment from "moment";
 const blue = "#1A4F63";
 const green = "#72B556";
 const yellow = "#FFC628";
@@ -33,7 +34,9 @@ export default class TripDetails extends Component {
             color: colorGenerator({ index: trip.id })
           }}
         >
-          {trip.tripSettings.transitOptions.departureTime}
+          {moment(trip.tripSettings.transitOptions.departureTime).format(
+            "h:mm"
+          )}
         </Text>
         <Text
           style={{
@@ -41,7 +44,7 @@ export default class TripDetails extends Component {
             color: colorGenerator({ index: trip.id + 1 })
           }}
         >
-          {trip.tripSettings.transitOptions.arrivalTime}
+          {moment(trip.tripSettings.transitOptions.arrivalTime).format("h:mm")}
         </Text>
       </View>
     );

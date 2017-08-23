@@ -5,10 +5,25 @@ import actions from "../../../actions/journeyActions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 class TripSearchPanel extends Component {
+  static get defaultProps() {
+    return {
+      cities: []
+    };
+  }
   constructor(props) {
     super(props);
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleOnKey = this.handleOnKey.bind(this);
+    this.handleCityClick = this.handleCityClick.bind(this);
+  }
+  handleCityClick({ value }) {
+    const inputType = "destination";
+    const autoSuggest = [];
+    this.props.actions.searchPanelInputsUpdateAutoSuggest({
+      value,
+      inputType,
+      autoSuggest
+    });
   }
   handleOnChange({ value, inputType, autoSuggest }) {
     this.props.actions.searchPanelInputsUpdateAutoSuggest({
@@ -35,7 +50,8 @@ class TripSearchPanel extends Component {
         inputs: { autoSuggest },
         inputs
       },
-      onClick
+      onClick,
+      suggestions: { cities }
     } = this.props;
     const autocompleteProps = {
       style: styles.autocomplete.styleProp,
@@ -99,13 +115,42 @@ class TripSearchPanel extends Component {
               autoSuggest
             })}
         />
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "100%"
+          }}
+        >
+          {cities.map(city => {
+            return (
+              <View
+                style={{
+                  height: "20px",
+                  borderRadius: "5px",
+                  backgroundColor: "grey",
+                  display: "inline-flex"
+                }}
+              >
+                <Text
+                  style={{ color: "white", fontWeight: "bold" }}
+                  onClick={() => this.handleCityClick({ value: city.name })}
+                >
+                  {city.name}
+                </Text>
+              </View>
+            );
+          })}
+        </View>
       </View>
     );
   }
 }
 const mapStateToProps = state => {
   return {
-    searchPanel: state.journey.panels.searchPanel
+    searchPanel: state.journey.panels.searchPanel,
+    suggestions: state.journey.suggestions
   };
 };
 
@@ -118,11 +163,12 @@ export default connect(mapStateToProps, mapDispatchToProps)(TripSearchPanel);
 
 const styles = {
   tripSearchPanel: {
-    left: "200px",
+    width: "100%",
+    background: "rgba(255,255,255, 0.9)",
     position: "absolute",
-    top: "20px",
     display: "inline-block",
     boxSizing: "border-box",
+    height: "100px",
     zIndex: 999
   },
   autocomplete: {

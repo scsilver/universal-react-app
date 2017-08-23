@@ -28,6 +28,7 @@ export default (state = initialState, action) => {
     case actionTypes.TRIPS_CREATE_TRIP:
       return { ...state, events: eventsReducer(state.events, action) };
     case actionTypes.SUGGESTED_TRIPS_REQUEST:
+    case actionTypes.SUGGESTED_CITIES_REQUEST:
       return {
         ...state,
         suggestions: suggestionsReducer(state.suggestions, action)

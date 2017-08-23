@@ -17,7 +17,7 @@ const suggestedPlacesRequest = ({ location, dispatch }) => {
     .get(
       `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.lat +
         "," +
-        location.lng}&type=cities&radius=50000&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`
+        location.lng}&type=transit_station&radius=50000&key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0`
     )
     .end((err, res) => {
       if (!err) {
@@ -54,6 +54,22 @@ const actions = {
   })
 };
 const thunks = {
+  citiesSuggestionsRequest: ({ bounds }) => {
+    return dispatch => {
+      request
+        .get(
+          `http://api.geonames.org/citiesJSON?north=${bounds.north}&south=${bounds.south}&east=${bounds.east}&west=${bounds.west}&username=${"scsilver"}`
+        )
+        .end((err, res) => {
+          if (!err) {
+            dispatch({
+              type: actionTypes.SUGGESTED_CITIES_REQUEST,
+              cities: res.body.geonames
+            });
+          }
+        });
+    };
+  },
   searchPanelInputsUpdateAutoSuggestRequest: ({
     value,
     inputType,
@@ -98,6 +114,7 @@ const thunks = {
                     actionTypes.INPUTS_UPDATE_AUTOSUGGEST_ORIGIN_SUGGESTIONS,
                   suggestions: originPredictions
                 });
+
                 break;
               case "destination":
                 const destinationPredictions = res.body.predictions.map(p => {

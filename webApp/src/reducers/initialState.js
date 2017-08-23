@@ -49,7 +49,8 @@ export default {
   suggestions: {
     places: [],
     plans: [],
-    placesOfStay: []
+    placesOfStay: [],
+    cities: []
   },
   map: { center: { lat: 0, lng: 0 } },
   panels: {

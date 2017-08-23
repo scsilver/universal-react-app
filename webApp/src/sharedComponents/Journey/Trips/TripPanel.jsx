@@ -6,6 +6,7 @@ import TripTitle from "./Trip/TripTitle";
 import Step from "./Trip/Routes/Route/Steps/Step/Step";
 import { View, Text, Image, StyleSheet } from "react-primitives";
 import actions from "../../../actions/journeyActions";
+import "./tripPanel.scss";
 const blue = "#1A4F63";
 const green = "#72B556";
 const yellow = "#FFC628";
@@ -25,7 +26,7 @@ class TripPanel extends Component {
   render() {
     const { events: { trips } } = this.props;
     return (
-      <View style={styles.tripPanel}>
+      <View className={"tripPanel"} style={styles.tripPanel}>
         {trips.map(trip => {
           return (
             <View
@@ -64,11 +65,14 @@ class TripPanel extends Component {
 }
 const styles = {
   tripPanel: {
+    overflowScrolling: "touch",
+    WebkitOverflowScrolling: "touch",
     position: "absolute",
     // alignSelf: "flex-start",
     right: "0",
     padding: "5px",
-    height: "80%",
+    top: "120px",
+    height: "70%",
     overflowY: "scroll"
   }
 };

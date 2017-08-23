@@ -13,8 +13,8 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
     ref={props.onMapLoad}
     defaultZoom={3}
     defaultCenter={{ lat: -25.363882, lng: 131.044922 }}
-    onClick={props.onMapClick}
     onCenterChanged={props.onCenterChanged}
+    onClick={event => {}}
   >
     {props.directions &&
       props.directions.map(d =>
@@ -22,7 +22,7 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
           key={d.request.origin + "_" + d.request.destination}
           options={{
             polylineOptions: {
-              strokeColor: d.color,
+              color: d.color,
               strokeOpacity: 0.7,
               strokeWeight: 5
             }
@@ -30,14 +30,13 @@ const GettingStartedGoogleMap = withGoogleMap(props =>
           directions={d}
         />
       )}
-    {/* {props.placeSuggestions &&
+    {props.placeSuggestions &&
       props.placeSuggestions.map(place =>
         <Marker
-        
           position={place.geometry.location}
           onClick={() => props.suggestedMarkerClick({ place })}
         />
-      )} */}
+      )}
   </GoogleMap>
 );
 export default GettingStartedGoogleMap;

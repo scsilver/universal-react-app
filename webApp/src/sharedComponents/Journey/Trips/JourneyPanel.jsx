@@ -21,7 +21,33 @@ import {
   TimeRange,
   TimeSeries
 } from "pondjs";
-
+const journeyEventsSelector = journey =>
+  Object.keys(journey.events).reduce((p, c) => p.concat(journey.events[c]), []);
+const journeyEventsObjSelector = journey => {
+  return {
+    events: journeyEventsSelector(journey),
+    startDate: journeyEventsSelector(journey).reduce(
+      (min, event) =>
+        min.diff(
+          moment(event.tripSettings.transitOptions.departureTime),
+          "minutes"
+        ) < 0
+          ? min
+          : moment(event.tripSettings.transitOptions.departureTime),
+      moment()
+    ),
+    endDate: journeyEventsSelector(journey).reduce(
+      (max, event) =>
+        max.diff(
+          moment(event.tripSettings.transitOptions.arrivalTime),
+          "minutes"
+        ) > 0
+          ? max
+          : moment(event.tripSettings.transitOptions.arrivalTime),
+      moment()
+    )
+  };
+};
 const startEndToPercents = ({
   rangeStartDate,
   eventStartDate,
@@ -63,6 +89,7 @@ class JourneyPanel extends Component {
   render() {
     const { journey } = this.props;
     const today = moment();
+    const journeyEvents = journeyEventsObjSelector(journey);
     const series = new TimeSeries({
       name: "events",
       events: Object.keys(journey.events)
@@ -89,84 +116,142 @@ class JourneyPanel extends Component {
           flexDirection: "row",
           overflowX: "scroll",
           width: "100%",
-          height: "100px",
-          backgroundColor: "rgba(255, 255, 255, 0.7)"
+          height: "100%"
         }}
       >
-        <ChartContainer
-          width={window.innerWidth}
-          utc={true}
-          timeRange={
-            new TimeRange(
-              journey.panels.journeyPanel.startDate,
-              journey.panels.journeyPanel.endDate
-            )
-          }
-          timezone="Australia/Adelaide"
-          enablePanZoom={true}
+        <View
+          style={{
+            bottom: "0",
+            position: "absolute",
+            background: "rgba(255, 255, 255, 0.9)",
+            flex: 1,
+            display: "flex",
+            flexDirection: "row",
+            overflowX: "scroll",
+            width: "100%",
+            height: "100px"
+          }}
+        />
+        <View
+          style={{
+            bottom: "0",
+            position: "absolute",
+            width: "100%",
+            height: "90px"
+          }}
         >
-          <ChartRow height="35">
-            <Charts>
-              <EventChart
-                series={series}
-                textOffsetY={0}
-                style={outageEventStyleCB}
-                label={e =>
-                  e.get("tripSettings.origin") +
-                  " to " +
-                  e.get("tripSettings.destination")}
-              />
-            </Charts>
-          </ChartRow>
-        </ChartContainer>
+          <ChartContainer
+            width={window.innerWidth}
+            utc={true}
+            timeRange={
+              new TimeRange(journeyEvents.startDate, journeyEvents.endDate)
+            }
+            timezone="Australia/Adelaide"
+            enablePanZoom={true}
+          >
+            <ChartRow height="60">
+              <Charts>
+                <EventChart
+                  series={series}
+                  textOffsetY={0}
+                  style={outageEventStyleCB}
+                  label={e =>
+                    e.get("tripSettings.origin") +
+                    " to " +
+                    e.get("tripSettings.destination")}
+                />
+              </Charts>
+            </ChartRow>
+          </ChartContainer>
+        </View>
       </View>
     );
   }
 }
-const Event = props => {
-  const { event, minutes } = props;
+class Event extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { dragOn: false, position: { x: 0, y: 0 } };
+    this.onDragStart = this.onDragStart.bind(this);
+    this.onDragEnd = this.onDragEnd.bind(this);
+    this.onDrag = this.onDrag.bind(this);
+  }
+  onDragStart(event) {
+    event.stopPropagation();
+    this.setState({
+      dragOn: true
+    });
+  }
+  onDragEnd(event) {
+    event.stopPropagation();
+    this.setState({
+      dragOn: false
+    });
+  }
+  onDrag(event) {
+    event.stopPropagation();
+    this.setState({
+      position: { x: -event.clientX, y: -event.clientY }
+    });
+  }
+  render() {
+    const { event, minutes } = this.props;
+    const { dragOn, position } = this.state;
 
-  const { startPercent, lengthPercent, endPercent } = startEndToPercents({
-    rangeStartDate: minutes[0],
-    eventStartDate: moment(event.tripSettings.transitOptions.departureTime),
-    rangeEndDate: minutes[minutes.length - 1],
-    eventEndDate: moment(event.tripSettings.transitOptions.arrivalTime)
-  });
-  return (
-    <View
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "20px",
-        flexDirection: "row"
-      }}
-    >
+    const { startPercent, lengthPercent, endPercent } = startEndToPercents({
+      rangeStartDate: minutes[0],
+      eventStartDate: moment(event.tripSettings.transitOptions.departureTime),
+      rangeEndDate: minutes[minutes.length - 1],
+      eventEndDate: moment(event.tripSettings.transitOptions.arrivalTime)
+    });
+    const dragStyle = dragOn
+      ? {
+          position: "absolute",
+          top: position.y + "px",
+          left: position.x + "px"
+        }
+      : {};
+    return (
       <View
+        onDragStart={this.onDragStart}
+        onDragEnd={this.onDragEnd}
+        onDrag={this.onDrag}
+        onClick={event => event.stopPropagation()}
         style={{
-          display: "flex-inline",
-          height: "100%",
-          width: startPercent
+          display: "flex",
+          width: "100%",
+          height: "20px",
+          flexDirection: "row",
+          ...dragStyle
         }}
-      />
-      <View
-        style={{
-          display: "flex-inline",
-          height: "100%",
-          width: lengthPercent,
-          backgroundColor: "red",
-          opacity: 0.7
-        }}
-      />
-      <View
-        style={{
-          display: "flex-inline",
-          height: "100%",
-          width: endPercent
-        }}
-      />
-    </View>
-  );
-};
+      >
+        <View
+          style={{
+            display: "flex-inline",
+            height: "100%",
+            width: startPercent
+          }}
+        />
+        <View
+          style={{
+            display: "flex-inline",
+            height: "100%",
+            width: lengthPercent,
+            backgroundColor: "red",
+            opacity: 0.7
+          }}
+        />
+        <View
+          style={{
+            display: "flex-inline",
+            height: "100%",
+            width: endPercent
+          }}
+        />
+      </View>
+    );
+  }
+}
 const DayRange = props => {
   const { startDate, endDate, events } = props;
 
@@ -280,16 +365,19 @@ function outageEventStyleCB(event, state) {
   switch (state) {
     case "normal":
       return {
-        fill: event.get("color")
+        fill: event.get("color"),
+        height: 80
       };
     case "hover":
       return {
         fill: event.color,
-        opacity: 0.4
+        opacity: 0.4,
+        height: 80
       };
     case "selected":
       return {
-        fill: event.color
+        fill: event.color,
+        height: 80
       };
   }
 }
