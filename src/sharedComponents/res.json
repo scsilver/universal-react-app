@@ -1,0 +1,520 @@
+{
+  "geocoded_waypoints": [
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJzeUuKaI1j0cRcG8ZQIj_AAQ",
+      "types": ["locality", "political"]
+    },
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJ_8bI8QV5g0cRiXGf4duJgJc",
+      "types": ["locality", "political"]
+    }
+  ],
+  "routes": [
+    {
+      "bounds": {
+        "northeast": {
+          "lat": 47.4375896,
+          "lng": 9.896077
+        },
+        "southwest": {
+          "lat": 46.024473,
+          "lng": 7.4394795
+        }
+      },
+      "copyrights": "Map data ©2017 GeoBasis-DE/BKG (©2009), Google",
+      "legs": [
+        {
+          "arrival_time": {
+            "text": "12:55pm",
+            "time_zone": "Europe/Zurich",
+            "value": 1501584900
+          },
+          "departure_time": {
+            "text": "6:13am",
+            "time_zone": "Europe/Zurich",
+            "value": 1501560780
+          },
+          "distance": {
+            "text": "452 km",
+            "value": 452160
+          },
+          "duration": {
+            "text": "6 hours 42 mins",
+            "value": 24120
+          },
+          "end_address": "7504 Pontresina, Switzerland",
+          "end_location": {
+            "lat": 46.490648,
+            "lng": 9.896077
+          },
+          "start_address": "3920 Zermatt, Switzerland",
+          "start_location": {
+            "lat": 46.024473,
+            "lng": 7.748296
+          },
+          "steps": [
+            {
+              "distance": {
+                "text": "34.9 km",
+                "value": 34927
+              },
+              "duration": {
+                "text": "1 hour 9 mins",
+                "value": 4140
+              },
+              "end_location": {
+                "lat": 46.294025,
+                "lng": 7.881457999999999
+              },
+              "html_instructions": "Train towards Brig Bahnhofplatz",
+              "polyline": {
+                "points": "}c|wG{ihn@ABcD}BGEGEIEECECCAEAEAECGEMGCCECo@a@a@WKIKIWYy@cAgDeEEGGEOKGGCCCCIKII[c@IKMSKSOYMYO_@GOY{@Me@K_@WgAEMEMOWKMKKCAKEOEMEMAMAGAe@Ba@E]G_@Oc@[OMMQ}@yA?A{AmCqAsBw@oAKWIYIYKi@COEKEIGKMKKIc@]g@]e@WIIIGGG]a@SUQOUOSKUEMCM?I?a@@s@LqAJs@Eq@Yo@e@[YYa@Q[]o@CEOYKMKOOQe@[sCiBg@UWIc@?a@DYD]HYBQ@Q?OAMCi@KkAUOEOEMMOMIKOSQ[Uc@a@u@k@[i@Og@Ac@AS?MAOIOM][KOKWK]IWGYGWISIWmAwBuAgCW[WWSQSO[MUE_BUUEKCIEIEECOMQQY[Sa@Qc@Om@O_AKk@Og@]w@a@u@]g@_@_@WOeCsAoAq@{BgA]K[EUCOAQBSJk@d@WLSH[DyBIUCQCQGMGWSmAcAe@Ym@Y]O_A[aCu@e@QuAW_@ISG]MYQ_@W[YCEIIEECEy@mACC{@qA{A{BeA}Am@u@SQ_@Y_@UYKe@OkAU_A_@]SeAq@uAq@a@M[Eg@Ea@@[@OBOBg@HoAZ}@Tq@P_AVi@Jq@J_@Dk@@q@?i@Ca@Ee@I]Ic@Me@Qe@UWMy@g@gAo@{A}@_Ak@_Ak@m@]WM_@M_@Oa@Gi@Ec@?O@OBI@KBKBA@MD[L[PgAt@_@Va@T_@PYLYJ[HOBQ@E@S@kAF{@@{@?mA@w@B]DsARyB^sATaBVe@D[@a@C_BEmCKi@Cm@Is@Qy@[cCeA}@_@aDsAuDaBgBs@aKgEmLcFk@UUGQEMEi@Mq@Iy@I{@CgACgCD}DHy@BqABqA?eACYAUCQCYGqAW}@QWG]EWCaAEoDIiBGqA?mBG}AE{@Ie@GqAY_Co@mCw@gCs@oBi@oA]GCq@QKCgA]}Ac@cAYe@Sg@Uk@]w@i@eAq@e@WEO[MOE[IUAWC_@?i@BQBQF_@NQFOFQL]TYT}@t@GDsAdAi@^c@^SFo@JwCr@_@Hi@LYHa@Do@?SAUCSE[ISGWQWO[WYUEGOWm@mAa@s@e@u@[_@[[_@YmAw@wBiA}Ay@oAy@gE}CkA{@sAeAy@m@a@]c@a@kAsAw@}@]c@cAkAY_@cAmAW]MOWQKKm@WWKMEOCYGWCyAOaCS{@Km@Ig@Qi@SKGWI}@K_@@u@TOJY^g@v@aA|Cc@nAe@n@a@^UPq@Ps@Bk@AYK_Ak@cBkAiA{@kAw@w@c@s@c@UIm@Ym@Sc@Ic@K]Cc@C[?w@AiCNcDLkBJ[?YE]Gg@Q}@g@_B_A{CuB_Ae@m@S{@[q@[WOkAmAm@m@AAc@a@_@[i@YoCsAgBy@{@Yu@OyAYiAM{ABo@Hc@TkB~@WLg@He@@{B?c@@a@?i@D_@HkA`@gBb@o@DiAAkAOu@Ii@I[Ek@Sq@[qBgAKCOECAkAUi@Ck@?Y@a@HWFWHw@^kA|@w@h@q@`@]Ls@Ps@Bq@E}@Sc@OyA_Aq@i@_@a@WW]]k@k@cAu@YK[Ma@Me@Ic@?uADcBJaCRuBP}@Hm@F_AP]FYLYLWN_Av@a@`@aA|@kAfAq@^_DfAmBd@w@No@Dg@?u@@w@Do@JiAJyANu@D_@DSDULKHWTSRSR_@TSLe@?U?kAi@w@[]USOOUUg@Si@K_@Kc@I[K]ISIQKQSOMKWMOGSCo@EuBMuBKU@SDSFYNe@\\WNOHKDOBO?c@AOCOEWSQQa@q@w@aAMKKIOMGGQUMQKSK_@KWKa@MWQUe@o@i@_@oBo@{Am@_FoBu@a@uAc@aDiAiGkBw@a@i@a@YWQ[K[G]Ow@K}@E_@Mi@Ka@Qc@Y_@YY_@Sq@OwAY{@Mq@?iAJaDv@qBh@oAr@IBQHOJ_CjAsAJq@Su@k@y@w@aBgBs@u@m@y@y@yAaAuAOQOCQSeAu@sCgAc@IU?k@?a@A]Ig@UWQMKeCsDAASa@_A}Am@aAWc@W[[]g@a@SIUMSKUIa@GcA?m@FI@WHQHUFa@H]B[DU?s@?QESGIESGiBiAi@]g@O]KuAG}AE]ESG]MYQeAw@g@c@k@k@YWY[S]MSIQCKYmAk@mCU}@So@We@c@o@q@u@MIw@QYEMAc@CIAQAUA_@Ii@M_@MkAa@cA[QIMKKKMSS[O[QYWWSOYOMCi@WKKQQQ]Qe@o@kBYq@cAwBk@cAm@aAu@cAq@aAw@aAo@y@GKm@Q}@Me@Ui@i@sAkAm@e@WKSEy@Ok@?o@Gk@]WQ]S_@Ua@W}@cAKa@_@k@[g@UI]KWFc@?{@Fq@AU[UOSSg@s@M[a@eA]Ok@Ww@Uq@GSEQMYS[WMUWY]Y_@]a@G_@Wa@g@IUYo@I_@Yk@e@yAe@sA[y@[U{@o@SQe@i@eBaDM}@Os@Ui@[[]]SQYYWU[Ys@mAg@k@{@WWKc@c@m@i@iA_Bc@qAUk@MUa@][AMB[D]HQBYBWAOIUMWWUYQQQSS]Qc@Qy@[}@[q@Ya@i@i@a@W[Oc@Y_@WUa@Q_@S_@SYWUYIa@KWO_@U[c@o@eAo@aBkA{CQo@Ii@Gk@Cs@I}@Ga@IYS]a@a@SWk@c@{@m@o@k@i@g@YUa@e@]_@o@w@c@y@]cAQe@O]QWGIMQSWYWSQSSWWUUa@g@m@}@cBoCQUWU[UWOUOMQMY[s@WYWUYQYSWOMKMO]o@i@aAYa@S[SWSU[]_@i@We@Om@G]Ea@G_@Km@Ic@O[WYSUSSo@g@]a@Y][g@O]IYMm@Ko@Iw@Ka@I[OYg@_@u@]YMUYQUWm@Ss@UuAQmBKcAIa@K]IMUUc@c@m@{@Oa@KYKa@Kq@Ii@Kg@Mi@Og@ISM]Ua@S_@Oe@Qe@Mo@Kc@Ce@Eg@Ko@Qk@S_@SSOMKESE[Eq@IMAm@OMEKGMKGGKIOMUWMKQUACWa@e@aAU]_@Y_@Ue@a@s@y@[o@Uu@Oq@E]Ea@M_DC{A@_@Bc@Di@@[?g@Ac@Ki@K[KQU[]U_@U_@YQSO]Oo@W{AOcAUkAO_@U]Q]U_@[u@I[Ig@Ku@EWIQMYY_@WU_@UQKMOSc@Mi@Gk@AYEsJ?cDGq@Ka@Mk@]o@s@oAm@w@_@_@_@]WMY[U[Qa@Ma@Mg@EWEk@Cm@AGEy@E_AAQK[Se@QUQOYO[I_@Ga@GWISE[I]EU?Q?QFWPi@^i@^[LUJQBW?Q?W?UAUCQEWG]Ow@g@mAeA_@YMGMCOCKCYAU?UDQFOFOH]JSBQBO?QAKCOGKGMKMGWESCSAO@c@LWH]DS@SAOCQC{@YaCs@_@K]Q_@WIIk@q@QSUWqAiBWYMMKICE]Q{Cs@qCu@cG}AQEi@KaAOqAUc@Iy@ScFyAm@OSGS?Y@YBUDYDSBS@sAE_CQc@Im@YUSw@m@q@m@YQWKSGWAe@Fy@RkA^c@POF]Je@LY@]?i@Mo@Ya@Wq@k@u@u@}@eA}@uAe@k@c@g@k@_@_Ac@iAUqAO}AMk@Eg@?q@F}@Ju@Ly@NeAZcAZiAVg@Hg@Fg@@k@Aw@G}@M[Iy@QUG_@Go@MmAIqBC_BHgAD}APgALsAB{@?a@Ai@Iw@WqBcAcB{@e@Yk@Wc@Q]G}@Gi@EWEm@O{@YaA_@k@OsAWmASqB[iDi@wAUgBSeBSuBOkAEeAIkAGaBW}Be@}A]w@Oa@G_@Ig@Gs@AoBLcM`CyAR{EbAgCp@wBl@sB`@oBZoEj@_E\\sC`@s@Lu@V_Fn@qCFsALyIbAqBRc@Dc@FyAh@QDQ@O?QAOEQGOKQOOSOUWaAAGG[CYAUA[@g@BeE[A"
+              },
+              "start_location": {
+                "lat": 46.024473,
+                "lng": 7.748296
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 46.294025,
+                    "lng": 7.881457999999999
+                  },
+                  "name": "Visp"
+                },
+                "arrival_time": {
+                  "text": "7:22am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501564920
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 46.024473,
+                    "lng": 7.748296
+                  },
+                  "name": "Zermatt GGB"
+                },
+                "departure_time": {
+                  "text": "6:13am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501560780
+                },
+                "headsign": "Brig Bahnhofplatz",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Matterhorn Gotthard Bahn (bvz)",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#283593",
+                  "short_name": "R",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Train",
+                    "type": "HEAVY_RAIL"
+                  }
+                },
+                "num_stops": 7
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "95.1 km",
+                "value": 95062
+              },
+              "duration": {
+                "text": "55 mins",
+                "value": 3300
+              },
+              "end_location": {
+                "lat": 46.9491464,
+                "lng": 7.4388497
+              },
+              "html_instructions": "Long distance train towards Basel",
+              "polyline": {
+                "points": "uxpyGcjbo@G?KbJK|FAl@Al@EvBElAE|@C^Cb@IlAO`BKdAKx@Ef@Il@Ij@QbAi@|Cs@rCo@`Cq@tBs@fBsKvUa@`AOXeFvKu@xAmCzF{BvE_BlD[v@mAxCaAzCM`@M`@y@rCeBtGw@jDwAtGc@lBOp@YxAa@tBi@tCg@tCSpAUdBM~@Ir@e@~E[lDOpBM~AKlAOjBWhDEf@MtC_@jGOfCOjC]dFOvBSvBSvB]hCCRMjAEV[hBQrA]xAi@nCg@pBa@|Ag@bBi@bB}@hCu@vB{Tti@aTfd@qKtTcz@bgBilAt~@cfGvtEubBtmAsj@re@g]|[u]z[mN|LmZnX{QbRcs@ll@yh@pe@yNtPyx@vaAan@pz@sl@zw@kVvXo[nXkQzOg_@tLoZpCgN`BmV{@ax@Bqd@MeIZ__AjHumCn{@{b@fLuKdCok@zDyLr@}b@yGoL_Duh@_RkYuLeD}@}Bi@uEs@iEo@iEo@oK_BiBWeHcAeDg@kEo@sDk@qCa@}@SmAOuASwASOEMCCAs@KWEYGYE}@SeAWmFcBc@OiBo@gKiDcA_@e@S]S[Q[UYUUS[[_@a@Y]W]S[MUSa@Ue@KS{@sA_C}D{EgIk@aAm@_Am@y@uByCs@aAGKIKaB_Cc@i@}AyBq@_AiA_BcDoFy@{AwBmEmBuEgAwC_@_AKYISm@_BqAqCg@y@q@eA{AmBcKoKc@q@yCaDsBqBmEmEy@y@yA{AWYW]Y_@Ua@c@u@OWM[Uc@Sg@Qg@{AwDUk@Ui@[m@a@u@]i@QUQUg@i@MKOMa@YKO_@YIIyA_AmA}@w@s@QQMOMQS[MUMSOYO]Ys@GS[iAMi@g@gCAIUaBCMa@{BKc@Ok@Mg@Oc@O_@Ui@Sa@S]SYe@m@g@k@i@c@SOSMi@[yCmAsAe@qA_@sCu@_Ds@uCq@iAYoA[c@IW@a@M_@O]KoIkBWEiAQmKNw@@cMFsAFgCBkGPuDb@cCVqD^cAJ]F[FuAZyALsDXy@HcD\\sCZsCZuBTkANkBZsBt@{@f@q@d@gBjAiCfBiFvDmD`Cc@^c@`@[Xo@z@[f@[j@Uh@Uj@i@~AkAxDQn@M\\Qb@O^O\\c@z@W`@Y^Y\\[Z{@r@_CzAgC`BkBfAyB`A{@^y@b@e@ZeD|B{GbFi@b@uAbAk@^i@\\oCvAmCtAc@RcAf@_Ad@c@Tc@VWLWPWPURm@h@UTSVIHABy@pAcA`B[j@q@jASZ_@j@g@p@e@b@sBpA_Bn@C@[BaARw@Tm@NUF]HYJk@PQF]N}@Xo@Le@Ja@Hk@DcGv@_EKsE{B_BqBaA}CiFeZBmCkCkKwGi_@m@iEuBmEsBuB{BgAeAWMCe@E{A@mALMDUHeBnAmBtBiC~C{@dA[t@]`Aa@`AiBpEa@f@gD|DsBpCaB~B}BzCqAhBsArBc@bBU\\KPMTQ^Qf@Sd@Uj@u@vAa@|@Wr@[z@Wx@U|@WfAMl@CLANOdAIx@IdAIlAE|AC`A?J?vA@hC@zB?t@C`D?VCd@Cl@Gv@Eh@QlAIt@UfAS~@[bAa@pAQ`@c@`Aa@t@Wd@IJILCBQTc@h@e@h@_@\\a@^o@`@o@^s@Zu@Xi@NQBQDqAZy@Tu@N_AZ}@^k@Zo@b@]Xg@b@s@v@y@jA{AtCmCvF}@`BcBpDYj@CHEFIPaDhGk@dAmAtBmBfDmCzEo@dAYd@]`@YZi@f@m@`@k@^i@Tm@Ta@LYDMBOBcANkAP[HUFq@Tm@X[Pq@d@_@Zc@f@g@n@g@t@s@vA_AlBo@tAeFfL}BbFo@vAs@nBm@fB}AfEUr@yAdEaAjCmAlDoArDMXKZmAnDM^IRcEdMKXKXm@jBEJCJ[bAe@rAcAzBaAnBo@nAo@pAaAnBo@pAo@pAeArBoAfCKTKRk@jAMTKVe@~@{AvCs@zAi@dAm@lAg@~@g@`AYh@k@fAi@bAi@bA]r@O\\[t@Sh@Sj@g@tAWt@Yx@[~@]`Ag@jA[l@_@l@W\\ORKHm@l@k@b@]RYN[NWJ[Je@J]Fa@DU@_@@a@?YC_@C_@G]G]IeBa@_@QQIOIi@MgCo@]I{@SWGa@Ee@Gg@MmA[gAWcAWWGo@Qa@K]I]KWGqA[}A_@iBc@wA_@cBa@oA[wA_@cBa@yA_@eBc@yA_@_AUYGYIgAYkAYgAWgAY}A_@_ASq@Mo@M{@MeAQ}@O_BYsASiB[{@O_@G]GqB]eBYcBYc@G[GUEUGWI_@MSIWMWOSMWQ[UWW]]SWSUc@q@OSIQoA_CcB_DoA_C}@cBi@cAGMeAcBw@wAQ]We@OYIQWe@QYU]U]W[[[YWYU[QWM]OWKYG_@IWCYC]A]@]@_@FUDSDSFe@Nq@Vm@Ta@Ha@H]Jc@PE@s@Vo@T{@\\]LWJSLULYT[X_@`@g@l@Yb@q@dAe@t@_@l@e@r@o@bA?@s@fA_@j@_@n@W`@W`@A?s@hAm@`A[f@i@x@g@v@S\\QVe@v@g@v@OTS\\OPWb@o@dAc@p@_@j@q@dA_@n@]j@Ub@OXSb@g@jA[t@Qb@ADOZIRO^MXQj@Qj@g@pAMXSd@Qb@Sh@Qd@KXI\\GVI\\EVGXCRCZEb@CTA\\A^?TAV?T@^@`@D~AHvBBn@@j@?b@?b@?TAVC`@C`@Cd@CPCREVEVIb@GZIXK\\Ob@KVMXQ^SZQZORW`@g@r@s@~@m@|@u@bAi@r@s@`Ak@t@o@|@m@z@g@p@g@l@i@t@i@v@]b@]d@c@j@a@h@_@h@g@r@a@f@]f@c@l@k@t@]d@m@x@MNSXSV_BxBUXA@}@lAwArBwBrCgAzAeBzBQXSVsDbFwBrCsBrCaArAm@x@eAtAuBtCGJIHoAbBiBdCiBdCc@l@w@hAmA`BoBpC}BzC}DhFyBzCmDtEOPOR_AdAY\\YZ_C~B_B|AgBzAk@f@k@b@[Z{AbAsA~@kBjAqCzAoCrAkBt@gCdAiA`@cAXoCt@E@E@KBOD}@XsB`@i@Lq@Js@Lk@J{@P}@P}@Po@LIBG@YDwCl@mCl@sF`AsIbBqBb@a@Ha@FqB^{AZiATK@IBwB`@mBd@_@HgDp@{GpAaLxBWFWDmB^iFdAw@NcAPgCh@QBeCd@k@Lk@L{Cp@wAZeIxA_ARaAPmDr@_Cd@c@JSDoLhC[Fw@Pa@H}B`@wH~Aq@Je@JkATUDWDcZbGqLbC{HvAWDe@HgQlDsNnC_ARqHzA{Bb@kTjE_@Ho@LuCl@iF`A}Bf@kB^eDn@}GrAy@P_APyE~@}Dv@gARaEx@gDp@uAXqDr@_Dl@sDr@}Cp@G@o@LE@wAXmDp@yAXkB^gCf@mAVC?g@L{Cl@sE|@iEz@kFbAeB\\}Bd@iB^yCl@{Dv@oATmDt@_F~@{AZqDt@aARcDp@y@NUFUDsAXC?wAV}B`@{@ReDl@o@NgEx@e@LUDSDsCj@mCf@mJlB{F`Aa@Hc@HgCd@_B\\gCb@oCh@gB`@qCr@gAZeDpAs@Z_Ad@qBfA{A~@qA`Ac@VcAz@u@l@w@t@y@v@i@h@m@l@m@n@k@n@y@z@_AdAw@t@g@f@m@h@u@p@o@h@o@d@i@^g@^c@Xm@^m@^OHQJwCvAqAl@s@\\}@`@i@Va@Pm@Xm@Xs@\\e@Ta@Pc@TYNYNOFOHoGtCg@VoOrHc@Pa@Pw`@lR_@P_@PoUzKaAd@gBv@gEpByBjAyAz@aBbAmBrAqBbBwArAgBlBc@d@c@d@qE~EaFtFw@z@u@v@}BlCgApAeCpDiAjBoBpDoBdEcBnDeBxD}AhDoApCi@nAuCdG{B|Eo@xA_ApBiA`C}@pB{@hB}@nB}@pBqApCkAdCg@fAg@dA_@z@Q^Q^{LzWu@`BeA|BoAnCUd@Uf@{@hBk@jA}AhDeAvBi@jAQb@Sb@OZ}@pB}@jB_AnBsAtCiAdCeA|B{@hBoFpLOVMXeIjQ}AbD{AvC{AfCeBfCwAjBwA`BqBtB_CzBqFlFURUR{FvFyFrF_EvDuErE[X[XuClCy@h@cAh@{@^gAXyBb@m@L{@JgEt@yBR_BPqBZYBYDmCd@gB^sCp@eBZC@eB\\m@TUDWDUFe@Hq@X{@Xu@Ve@V{@b@cAt@s@l@_AbA}@fAs@|@u@jAu@rAu@rAaArBo@`Bk@zAe@|AOr@Sx@Kd@c@|BCNyBrMmAhHkBfLYfBWjBg@bEOhAGl@Gx@Ev@Cp@Ad@Av@AdA@dABx@DbAHdAHt@Fv@NfANlAJr@Jr@RtAZrBhAxHtCnRb@tCT|A\\vBl@zD^`CRjAn@jDrA~GTfAR~@Tt@Rp@j@xATh@`@v@h@v@x@fAv@v@xCzCp@n@n@n@HJb@b@t@p@~@v@ZT^RVJFBl@Xj@Nd@JF@XFB?j@Fb@Bj@@hGBZ?d@@f@Bj@Fr@Lr@R\\Jl@VnAh@h@Vj@VNHhAl@JFJDl@Z|@f@XRXTB@NHHFHHBBZVHDHDLHNHNHHD`@TLFPHPHZNZN^N^N`@PPHXJx@Pj@P^NXTXXh@p@n@z@FP@A"
+              },
+              "start_location": {
+                "lat": 46.294025,
+                "lng": 7.881457999999999
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 46.9491464,
+                    "lng": 7.4388497
+                  },
+                  "name": "Bern"
+                },
+                "arrival_time": {
+                  "text": "8:23am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501568580
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 46.294025,
+                    "lng": 7.881457999999999
+                  },
+                  "name": "Visp"
+                },
+                "departure_time": {
+                  "text": "7:28am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501565280
+                },
+                "headsign": "Basel",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Schweizerische Bundesbahnen SBB",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#d50000",
+                  "short_name": "IC",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Long distance train"
+                  }
+                },
+                "num_stops": 3
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "117 km",
+                "value": 116698
+              },
+              "duration": {
+                "text": "56 mins",
+                "value": 3360
+              },
+              "end_location": {
+                "lat": 47.3785394,
+                "lng": 8.536860799999999
+              },
+              "html_instructions": "Long distance train towards St. Gallen",
+              "polyline": {
+                "points": "ewp}Gy{kl@A@GQo@{@i@q@YYYU_@Ok@Qy@QYKQIa@Q_@O_@O[O[OQIQIMGa@UIEOIOIMIIEIEQK[QIGCAcAg@QI{@c@i@YIEIEi@Yu@a@e@Ug@Uk@Wc@Sa@Qc@M_@MUEWG[Ee@E_@Ce@CeF?eAA]?{@Eg@EA?c@ICAa@Ia@Mg@S_@O[QA?_@YWO[WsDmD{@{@yAuAi@g@a@c@g@i@e@m@{@qAe@eAWk@]_AQg@So@Mi@Ok@a@uBk@wCc@}Bi@sCiCgPu@wEiAuHiA{H{@_Gw@cFQiA_@gCMaACMYkBKu@eAeH{BaOG_@Ke@I_@Uy@W}@Yu@Yw@]k@g@w@a@k@c@g@g@i@i@a@QKOMs@a@]MMGUIIEUISEWEaBSy@Aq@@i@Bi@HWBq@Pc@PYJgAf@cBt@eBx@oAj@MDsB`A_Ab@YLoB`AwAn@yFfC_@R_@PqB`AaAf@y@^_@Pi@T}@^YPs@VsAb@QDOFmBd@wARmALy@FwADkA?gACgAE{AQ}@OqAUoA[o@Uw@Wq@WyAq@i@YMIOIOS{@w@_AeAoAmAw@eAo@w@aAoAwAsBs@qAsAaCoA}BqAuCO[yAmDyAkD_B_EsAeDiBkF_@mAoAiEkCsKqC_OmAkI[sCkBgQs@kHuByOmAmGeBkJmBqHaBeGuAiEmBgFcBoEqB_FmCmFaCgE_DqFkEuGuAeBsCqDi@q@iCqC_AiA}HiHqKwHsJgGePwIgEyByCcBoEiCaCmAuCgBmFyCcEaC_BaA]QeDcBgDiBkBaAiAk@aBw@oCiAcBo@{CgA_A[{Ai@]Ko@SyBw@uDmAmCu@cCo@qFiAaDg@uBY]C{@KaBOeAKiE_@mBUwBY}Dq@{Co@sA]aAW{C}@uCcAoEgBaGuC}@e@_Ak@q@c@sCgBeBmAIGOKo@e@[WYUe@_@{@s@gA_AQOOMSSy@u@s@s@[[OOi@g@a@c@OSa@a@i@m@g@i@qA}AQU_@c@e@m@m@w@u@cAo@}@]e@i@y@a@k@o@cAKOg@y@Yc@e@y@[i@]m@o@iAS_@GMIOOYU_@_@y@We@Ue@k@kAUg@]s@Wm@MYACWk@e@kA_@aAUg@{@yBm@_B_@eAmBkFwA_Ee@uASi@Uq@mAgDw@aCy@}B_AoCcAoCy@aCISM]sAmD}A_EoB_FeAyBKUwCeGuAgCo@mA{@{AYa@a@q@OUsBiDaAqAmBsCmBgCUYsB{B}CgDmBkB{ByB_@_@]Ye@a@][]W[WSQc@]]YSO]Wg@]e@_@OK[WIEWO}EgD_DuBcAs@cBcA}AcAoAu@yHmE[Ss@a@qAq@{@g@{@c@w@a@sAo@gAg@{@_@eAc@{@]{@[uE_BuE_BMEMCOCcOkAuKo@eFa@wPcAaCQcJi@uF]cBOgAMoAOgAOa@Gq@Ic@Ia@Eg@Ia@Ga@Ik@IyDk@gBWg@IkAQq@Ke@GmAS{KaBcBW}AUqFy@kEo@_NqB}Eu@o@K_C]y@M_Dg@gCa@}Cg@qAWkASmCe@_@I_Dk@cEw@cIaBiE_AsA[wCo@k@OOEKCkAWoAY{@SmA[g@MGC]IuA]w@S{@Uy@Sm@QUGyBk@{Bm@o@SiBe@yBq@qDeA{Ae@eCs@mBo@MCo@UeBi@uDoAqBm@mC}@iBo@}Ai@oBo@gA]qBq@w@WoAc@gBm@_Cw@uBu@u@YwF{B_DuAcB{@mAm@kAo@oAu@gAq@uBmAaBgAcBkAkAy@oBwAuBcB_DmCkBeBKG[]kAiAgDkD}AcBeAmAuBgCm@u@Y]kAyAmA_BoAiBq@aAIKIKIMcA}A_CsDu@mAmAsBqA}BkA{Bs@uAaAmBaAuBiAeCs@aBYm@EKEIKW_A{Bu@iBi@sAs@mB_@cAo@gBoBcGaAaD_@mAq@}BMg@}@_DaAyDKa@Ia@gAmEy@sD_@aB{@yDu@_Dg@sBcAaEYgAeAqDoAeEo@uBsA{Dq@sB{@}B[{@y@wBkAuC_@_Ae@gAeBwDCGsBmEg@eAGKEIoLcUs@qAqC_FGMUa@wAwCgAqBkByDQ]]q@}@aBy@}AcAsBaCsEaAiBoBwD{AqCuDeHsAiCuAcCu@oAcByCkCiEkAiB}AeCgBsCwA{BkByCgAcBgAgByQuYgSgZwKmPeCeEwDsHUc@i@iAeKgU}@uBwAkD_A{BUm@Og@a@aBK]M_@{@oCeA_EuAmFyAeGuA{GaA_Fk@eDO}@aA{Fm@qEu@mFUkCe@{He@{HOgDOeC[}DUoCUwBQaBa@cDu@cGmEk`@oEm`@cE}YSsAoR_tAkDqVo@oEmB}MM{@uAuJsAoJyAcK}AyKsA}JmHic@wGu_@yAwFyAmF{@{CiAqDk@eBIYmAoDq@iBsCqH]w@o@_B}BiFsBmEqB}DuB}DgB_DoCqE{@sAqAuBmCkEgB_D}@_B}Reb@{Rcb@aBiDoBgEmCmFcCsE}B}DgBuCuCkEwB{CiCgDyBoCgCuCqCwCmCmCeDaDcD}CeD_D]]}DuDeDaDgE_EqDkDsCoC}CwCsCqCeCiCaEwE{AmBcB{B{AuBe@q@_AyA{BqDmAsBeAmBeAsBgAwBkAiCm@qAw@eBcAcCqBkFsByFgDcLQm@}@}CI]G]wC_M_@sB_A}EoCiQgBmMIq@QcAQmAoAmHG_@IY{@qEe@wBWiAWgAw@aDsFgQkGgQ}FsLmHwNuDgFsJcM}McNkL_JuOyIqQsGeKeC}LoB}MwAoNo@sGEkSBcFOqCUuIkBiFeBsAm@o@[wAw@sA{@wAaAyAkAkC_CuB}BQQQS_AkAe@k@s@aAe@s@W_@o@cAm@cAg@}@m@iAOWcAwBa@aAc@aAM][w@GMYy@]_Aa@oAe@}AaAaDi@oBOg@Ma@c@yAuBoHqCoJMg@Uu@[gAW}@e@}AGSQq@W{@Qk@Qm@Qk@Oi@Qk@Qm@Oi@Uw@Uy@Qi@W_AW{@u@oC[iAS{@Qq@WiA]yA]aB{@gEg@qC?AQaAMw@Ki@SoAa@_Ce@uCa@aCWyAe@mCKo@S_AYsAWgAW}@U}@[cASm@Oa@Oc@]{@Qc@g@kAMYk@iAe@y@a@s@_@q@k@y@o@_A{@eAs@u@q@s@q@o@ECm@i@o@e@w@i@a@WKEQMQIOKSIQKOGMIUKC?qBy@_Cw@}@UMEOCOEc@MA?i@KSEaAOMCSCSECA}@KWAu@I}@E_@CKAe@CQ?mAAgBEqAAm@AcDMkAI}BQqDYqAIsASyMyCECeA[}@[g@Qg@Qo@Us@WgAc@_Aa@cAe@{@c@g@Y{@e@UM[S{@k@w@g@q@g@MI]Yi@a@y@m@i@a@k@e@u@o@k@e@c@]]Yi@c@a@Y][q@i@u@m@m@g@u@m@s@k@a@[a@_@SOgKmIaCwB_@_@Y[c@g@{@cAMOKMcFgGwAyAUSWUcBuAeAs@i@]_B{@sAk@mAe@mA]g@Oo@Ma@E_@G_BMqA?kBJgATu@RmC|@ODQFuBl@iATw@HgAD_BIgAIsFk@IAIAOAyHw@uJ}@iBWaCk@iAYWGgA[c@KYI}@c@{@g@}@s@y@aAs@cAs@mAg@gA_EyJeAiCe@iAkAsCiAuCk@uAq@mBk@wBa@yBYeCEw@IkBCuB@yAFqA@Q@S@UHeANoAPmATgARcAXcALc@Rm@Xu@n@{AP_@L_@Te@z@mBt@yAjA}BjBoD`@{@`@eAVq@Na@Vu@b@sAT_Ap@kCDSFQt@{D\\oBVcBX_CRiBJeAJeAPkC@UBUX_F`AwPtAaUv@yMz@sNLcBJcAV{BV{AZaBXqAT{@V}@Pg@H]JYJYjA_DN_@v@qBFQjAoCBI^aAl@iBb@uAb@}AFYPy@^mBRaBZyCNaCFyC?oCGgDMyB[_DSeBk@yCk@gCoA}EcBmGaBcGGSESsCkKaAqDwBgIeBoGkBeH}CuLm@yBGWGUsB_HkCqI}AeFy@wCs@kCCIi@qBg@cCoDyMGSES}@gDa@aBk@yBESESuB_JaAeDm@eBy@sBk@kAIQKQq@kA_A{Ay@iAqA}AaAcAcA}@aAu@mAu@qAo@qAi@qAg@{YgKMGMEyEaBWK[KcA]uAi@u@]YM_@W}@m@{@q@QQSQaAiAu@aAaAcBk@kAe@gAq@kBc@uAcAkDkA_EGSISsJw[ACIUGUsHwVs@{BwFcRuF_RkBiGo@}B[gAu@wCg@sBk@cCo@yCk@qCo@mDg@}Cu@gEa@sBYsA[eBe@}BMu@EWGYk@eDs@mDwAwIcAkHo@uEGe@Gg@g@gDkEwWmEwWc@kC_AwFwAiIw@qEw@sEy@aFc@sCIe@Ie@Mu@AGo@cEOuAAKk@sEc@sDc@eEWuC{@_LGm@mAqOM_BKiAImAKkAKoA_@oE_@gFGaAI_AaA_MKwAEk@Ek@ImAOiCIyAGiAEaAEg@E}@Ce@Ee@wAmRMuAAOGq@YsDCg@E[AOIiAa@eFwA{Q{@uKy@oKe@}F[cE_AyL_AwL{Dug@QkBKuAMwA?QwAkR_Dg`@i@cHG{@G{@]sEAG{@oKIs@Gs@qAoMcAiIw@_FkA{I_@{D[mDGg@As@Cu@YgESwDEu@MiEAsA@yE@_BDwAFsAFoA`@gFJeA^uCF]F]\\sBr@cDR{@vAoEf@yAZu@x@kBNa@Zq@`EsG|@mAjAaBtB}C`AcBp@wA~@uBv@uBr@yBp@cCj@gCjFqVb@qBbHo[Nm@Lm@|@yDLm@Ha@Nm@XsABOf@aCBMLaAJc@Hc@FU`AsEn@gDP{@BSDS\\oBTuA^wBtBeL`@kBZsAVeAVaAh@iBx@cDT}@BGPu@Je@DQF_@PgAJeALoABY?IHqADqADiB?qBEmBI{AK{AKyAScCUaCMcBE[ASCU]sE[yDEg@YiDQuBOkBOaBU}CW}Ca@{EQmBW_DUmCOmBQiBY}CYoDS}BAKKmAMyAOmB[kDeAiMU}BIaAK_AMaAQmAUsAQy@U_AU}@Uw@So@[_A_@_Ai@iASc@Ua@_@q@k@}@k@u@[a@_@c@e@i@i@g@i@g@c@[o@c@e@Yk@]m@Wi@Ui@UwAe@gA_@iC_AoAg@u@YoAi@oAi@wAo@wAq@}@a@gAi@uAu@o@a@e@[e@_@u@o@]][[c@g@W[y@kAe@s@e@w@_AaBGQw@wAy@_BQ]mI}OcBsC[q@e@}@k@eAsA}CaAeCs@_Ce@aBUaAWqAqBmK[_BsAiHuAkHo@kDESESmHo_@cA_FG]GWo@oCm@oCkAsFk@kCm@gCw@qCg@eBk@aBq@iBm@yAm@wAg@eAa@w@a@y@Ue@Wc@_A}As@iAQWi@y@gAuAc@k@e@i@MMOO{AaBs@s@{@w@}@u@kA_As@i@s@k@iA}@mAcAm@i@}@_A}@aAo@u@MOk@w@OSOU}@wAi@_Ay@{As@yAg@mAe@sAe@qAm@sBUy@Sw@S}@e@}BOy@QcAOgA[oCQ}AQeCKgBG{AEcCCyA?yA?uA@eBDiDBeBBiBBuBBeB@}ABmABwAB_CBuBBgCBsC?_CAgCAe@Cu@AUAa@GkAAe@C[Eo@C[C[Ei@I_AKcAO{AQyAYiCc@yDEY[qC]}C]yCc@wDW_CSoBWqCWqCsRwvBqRwvBAKAKWkCkAqMeB_SiF{i@[cEMeBGw@_@}DCYC[YmC[{CI_BIoACYAU?QGcBBkC?a@@m@@q@BeABuADuAJoC@YDw@HyANqCBg@Bm@@[Di@Fm@L_AJq@Lu@Jo@RiALi@XqAPq@Rw@Ni@XcANi@f@_B`@uA\\kAXeAXeAVcAV}@Je@\\uAh@uB@G?A?A@El@iCx@qEl@oCv@qDx@mD|@wDb@iBDSFUx@eDp@mCr@qC`@aBb@eBT}@Ni@Vu@Ti@Rc@b@cAR_@Xa@Xa@bAyAZY^m@b@w@Xo@Xs@L_@Lg@V}@^}A\\oANm@Py@Jm@J}@BIHw@D]DULaAHq@Jq@La@ZoAHW^iAb@oAXw@@AJ_@Nm@VgAPw@TcAXgAFSXiAXgAXaA|@iDDMh@kB^wAZoA`@uAz@cDnA{El@wBn@_Cv@uClC{JdAyD\\mAb@uA@EJUXq@Xq@p@_BTw@Ne@j@sA`A_CLYpBwEhAmCjCkGfAeCd@iAT_@n@_A|@}@ZWDE^e@DGh@k@X]HKTY^c@X]RW^k@Tc@@ALYVo@Vo@Z{@f@kAVm@Xg@T]bJ_O`KiPx@sAZg@LMj@k@b@a@LONKr@s@TYf@m@Z_@`@o@R_@JMRYh@cAP[\\k@p@uAb@s@j@s@p@k@x@o@\\Yr@e@VQpAq@fAm@BAzBiArBaA~DgBlCmAhAk@f@Ub@Sb@Sb@Sr@]t@a@b@[`@Y\\Y\\]^c@PUJMLQJQDGLSVa@d@u@JQP_@P[N_@h@wATq@La@J_@FULg@Ji@H]Lu@PcADg@H{@Hs@H{@HeAR{BR{BR}BRgCRqBRcCPuBLsAJwANsBJsAHkAPqBLaBX}CToCPoBRyBRwBR{BHy@JmAJiAHiAFcAFeAHuADoA@gA@cA?mA?iACy@Ay@EcAEaAIwAKsBI}AImBEy@GaBGwBK}CIiCIuBImBGgBCu@Aw@CsAC}@GsAGyAGcBIeBIiBGkAAo@MwBGaBGcBKqCMgEYqIOmFMoECg@GwBA}@C}@C_CEkCEcCG_CKiDEsBIoBAq@IaCEiACo@E{BCgBBiB@uAHcBJaBN_BReBV_BX_Bl@aDBOXeAVgAXsAZ_Bf@cCb@aCVsAn@wDd@kCd@gC`@{Bb@gCZaBLs@X}AV_BPcAd@kC\\kBZiBN}@`@wBRmAPeAj@yCt@eEFc@Hm@Lu@Ju@N{@ZuAVeBZwB\\kB^uBLi@b@uBLk@TqARmAR_Aj@sCBQXaB\\yBh@aDJu@ReAX_B`@wBHg@RcAZcBX_B\\mBd@iCToAPeA`@}BX}AZkB`@}BJa@XmBHa@Hg@PiATeBXuB^aCb@{BJm@N{@L_AHq@Ho@DaABq@@_AA}A?u@A{@@aABs@Fq@Fm@Jk@Z{AN{@He@Hu@R{AJw@Fm@HaARkB@q@Ba@Do@Bk@Be@@MBg@Bc@Dm@B]BUD_@F]Pw@^gB\\_BToAXqBJk@Hg@Ju@F_@BOBKFSPu@`@{Av@}CVcA^sAd@sBTcA^_B`@gBNq@Lq@Py@Lw@XaBX}Ap@{DN}@Jk@XaALg@Ja@FU\\_Aj@yABEX{@Xu@Re@@GLe@Ni@BI\\sAv@yCRoAb@eCd@gCj@iDf@kCd@iCr@sDn@mDHe@Jq@DOJi@He@RgADWF[Hi@@G@EHo@Fm@@G@GToA\\mALs@F_@Ni@Jc@Pm@Pm@Nm@Rq@XiAJ_@DKJa@d@cB@GLc@Ne@Vq@HQTo@Tw@Nm@Ns@RmA\\kBdAaGA?"
+              },
+              "start_location": {
+                "lat": 46.9491464,
+                "lng": 7.4388497
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 47.3785394,
+                    "lng": 8.536860799999999
+                  },
+                  "name": "Zürich HB"
+                },
+                "arrival_time": {
+                  "text": "9:28am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501572480
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 46.9491464,
+                    "lng": 7.4388497
+                  },
+                  "name": "Bern"
+                },
+                "departure_time": {
+                  "text": "8:32am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501569120
+                },
+                "headsign": "St. Gallen",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Schweizerische Bundesbahnen SBB",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#d50000",
+                  "short_name": "IC",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Long distance train"
+                  }
+                },
+                "num_stops": 1
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "0.3 km",
+                "value": 259
+              },
+              "duration": {
+                "text": "4 mins",
+                "value": 259
+              },
+              "end_location": {
+                "lat": 47.377923,
+                "lng": 8.5401898
+              },
+              "html_instructions": "Walk to Zürich HB",
+              "polyline": {
+                "points": "{rd`Hkjbs@zByS"
+              },
+              "start_location": {
+                "lat": 47.3785394,
+                "lng": 8.536860799999999
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "0.3 km",
+                    "value": 259
+                  },
+                  "duration": {
+                    "text": "4 mins",
+                    "value": 259
+                  },
+                  "end_location": {
+                    "lat": 47.377923,
+                    "lng": 8.5401898
+                  },
+                  "polyline": {
+                    "points": "{rd`Hkjbs@zByS"
+                  },
+                  "start_location": {
+                    "lat": 47.3785394,
+                    "lng": 8.536860799999999
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "116 km",
+                "value": 115989
+              },
+              "duration": {
+                "text": "1 hour 15 mins",
+                "value": 4500
+              },
+              "end_location": {
+                "lat": 46.85308000000001,
+                "lng": 9.528924999999999
+              },
+              "html_instructions": "Long distance train towards Chur",
+              "polyline": {
+                "points": "_od`He_cs@tAp@s@`E_Gn\\S|@Op@Sp@Sr@Up@Qp@Kh@QbASnAUlAKj@i@fC]dB_@`B_@xBETETAD?BOp@Gf@Q`AGn@Gn@El@Ax@Av@@t@@r@@v@DvA@l@@p@B`ABx@@p@Dn@Fr@Fj@Lr@Jj@Nl@Pd@Rh@Rd@Tb@T\\RXVZn@n@hAhA`A~@hAdAnAlA~@x@n@b@fAd@b@Nl@Ll@Df@Bh@?b@Cb@Eb@Gb@K`@M`@O^O\\O\\Uh@_@XUJKf@i@f@k@n@_A|@wAxBkDnBaD~AaCl@cAtAoBx@gAxBqCnAaBxAqBlAcBfD}Et@cAv@s@zAwAvE}CnC}AbBq@JGFCj@SFCz@W|Ae@l@Op@OXGp@IJAx@GnAGJAH?p@EpBO^AzCMbACj@Cx@CvBGdBGZAbCGxAIJALEdAYRKNININKFCRMf@YxByALIRIx@[n@YHCRGXIl@O`@GVCVCh@E`@AF?L?N?X@Z@P?vBJ`@Bh@BbBBv@C~AQ`@Gh@In@IpDe@vC_@x@IVGt@IjAM|@G~@It@Et@GzAMP@fACLAnAQXEn@Ql@SBAp@[f@YlBsAb@[vAaAtAaAvB{Ab@Yp@c@b@SNIPG~HmDb@OPId@Sb@Mr@S~BY`@Mf@MVI\\ObAi@b@[h@e@f@g@RWPUh@{@^s@`BoDJSJU`@y@p@kALSFKl@_Av@cAfAmAl@m@d@a@NKLMHG^Yl@a@lDgBjFkCnB_AjAo@XMTMrBcAr@[jAg@p@Up@UREzDkAxG{AbB]JEHAdGuAhCm@REr@SdD{@bAW`Cq@nA[j@OLGLEZKRMLEPKZONK~@m@~CsB`@WdBiAv@_@^O^MXIl@MXG@?BAB?|Cq@bASh@MnAWfCg@jBc@REZGnGmA|@Wf@Qp@UjAa@\\Mh@SRGrBu@fAa@BAz@[HCfGyBhC}@vBu@t@Yz@_@@Af@U^Ud@]d@]|BeBbCiBrEmDj@c@n@g@VSXW|@q@~AkA^[~@y@HG`AgA|@_ANSPWd@i@`AgArA}ARUtA_Bn@eAV[d@u@p@w@h@c@bBqBbBmBdAkAr@{@l@q@rAsANUNUNWLUNYTa@^}@`@mANk@bAiD\\aAXu@Vk@Ta@Vg@\\g@`@i@|@cAp@k@`CcBRMTMb@W|@a@NKbAo@@?`Ak@lAu@d@WVOTOvAw@tAw@fBaA~A_AjBeAhAo@l@]t@c@ZSf@[nBqA\\U\\UxAaAl@a@^UZMf@U^Mn@QlAWx@Ot@O\\Kl@UPGPGVMLIn@]n@a@`Ao@dAq@v@g@~@m@r@e@f@[t@e@x@e@XOz@e@jB_A|Ay@|@c@dAg@lB_AlEuBlAk@TKRKxAs@hAi@bAi@TOPMjAy@p@i@t@o@p@o@X[|GoH|@_AHILKLKJKhA}@z@o@tEgDNILKfBqAzCyB^WHGHI|D{CbA_Ad@e@LQpAeBz@yAz@}AZq@p@aBVm@Ro@n@sBn@sCPcATwAJ}@JiAToCHgAJqAX{BJ}@N}@VuAXqAFUBKBSJ_@Na@Ty@`@cApAyCRe@^}@j@aBRu@ZkAXkAl@mCz@{D@E`@gB\\qAXaALa@n@iB`AcCl@aBZy@@CL]`D_JRq@ZeANq@Jk@TkAJw@Fm@Fq@JiAHkAD{@BWBa@NeCJuAHo@J_ALw@P}@P{@Ni@VaALa@Tm@FQrBuFDI@EBIVs@dD}I^eAZy@J]Vw@XiANo@P}@F[NeAPoAb@qDh@cEf@}DZgCBYLaAJo@?EBORqARiANaANm@\\{At@_DbDsMz@qDXgAj@yBh@{BViARw@h@aCl@mCn@oCb@kBTmAJs@Jm@Hq@Hq@JoAF_AV{FXkGP_EN{DJ_CDk@Bs@Bw@\\aHFw@RmBNaAH_@Py@@GRu@R{@XaAZcAb@{Ah@eBn@{Bb@wAr@cCd@}A`@qAj@qBf@_B\\_AXs@`@}@Zm@^o@V_@V_@`@i@PUX[X[`@a@d@c@XUf@_@l@a@n@]h@Yr@[j@Qb@OdA[RGf@OJCPGPGZMv@]d@[~@k@n@g@r@u@l@m@\\c@f@q@^q@Xe@b@{@Tg@b@gA^aAXs@h@qA^y@Xm@^s@Xi@`@w@v@}A|@cBP]^u@Xe@Zq@R_@b@{@v@{AhA}B^y@Rm@HQNi@T{@P_APaA?CReAP}@RgARu@X_AVu@f@kABG`@aAZw@b@u@t@sAn@eANQd@k@`@c@h@c@b@YDCn@a@n@_@`Ai@v@a@b@Un@]j@[HEn@a@LGl@g@VW`@c@X[n@}@HOh@w@vAsBh@{@j@iAv@gBBEb@eAd@yAZs@P]Ng@Ri@FUZs@l@_BPe@^mAj@sB`AmDn@yBRe@BGXo@Zs@r@mAx@wAnAuBf@eAl@qA`@_AZy@jEgMDMDMTm@t@{Bz@eCz@gCTy@T_ARmAV_BHs@Fu@NqBFoAFo@Hy@Hm@Ho@PaAPw@ZiAZ{@b@aAt@yAl@eAb@u@t@kAhAcBb@i@\\_@l@i@p@e@^Wr@]lAi@h@Y^S`@Wl@c@XW`A}@d@a@dA_AjAcA~@w@dA}@~@w@l@k@XU`@]r@m@n@i@n@m@Z_@b@g@Za@l@{@l@}@h@y@t@kA`AyAdAwAfA}AhAyA~@qA`AuAbAqA`@g@h@i@XUv@m@ZSz@c@XOvAm@`Ag@ZQXQf@_@ZWb@c@VUj@q@`@e@PURW`@i@f@m@`@i@b@q@Ta@`@u@Vm@^}@Pi@Lg@j@_CJ]Fe@PmAHu@JgAJmAH}@HeAJoATaCVgCPwBHcADqAHmB?sCAq@As@?OEcCKaCO_BS_BMkAW_CWmB[eCWyBUmBWaBY{AK_@EUGUES}@qDOg@GWGWc@gBg@qB_@{ASu@e@eBw@eD[yAU}AUeBQgBo@sHEm@Gk@g@gDc@oBuAuEK]M_@gAqDk@wBa@sB[oBQaBEo@Gm@o@kIEm@Ek@iAoNIcAIaAaBsSMmCG{B?_BBuBF_BJ{AN}ANmAnCiRpNeaAN}AbAiPB}A@m@@o@p@_c@FmC?MLeFDyBBWHaAFqCFkCBq@DoBDoBJsBLsDZ}HBaA?WFqAJsCFkBLeDRmGNqFToGTuGVyGH{CRwBNkEPiFTwFTiGL}DPgELmBHkAPyAVmATeAZeA^eAb@eAZo@h@{@h@s@h@k@~@_AlByA`F}DbCoBlBeBz@_At@gAn@mAh@uAHYJWTu@VeAP_APsALiAHaA\\yFRmD`@aHTmDP{CRsDJiCBqA@wA?aA?WAUAaC?k@AsBAiAAkB@aBBeB@i@FiAH{@JaAJy@Ls@TiAJc@FWHWRq@^aAVs@Zw@\\y@f@iApBwE`@}@l@yAr@cBtAcDPa@^eAX}@Rq@l@qCVwAV{BR}BL_DXaO@o@FiCFcDBcFAoBKuB?UEm@Gw@G}@AMC[E[AKgEkc@YuCSiBe@_Fa@oEg@wFe@sEOyBIiBGsBAoB@uC@}ABeBBcBDmC@c@?c@`@k]BaDBaAFmAFcALoAPeBLcAX_BXoAXkAXaAV}@Vw@nC_J~BwH`@kA^kAlA}DdAeDrAmEvDwLdBmFTu@Vu@rFwQ~@yCt@}B^qA\\kA\\sATcATgAPaALeAL}@NeBHoAD{@Be@Bi@@g@@i@@e@?{@?y@?eBAy@Ay@?y@AmB?qB?qB?{B?_C?wBAaB?_B?qA?_A?SAoA?aA?}@?iBAaB@cB?eB@sABkADeA@U@UFiAHiAPwBToCNyARcCLqAL_BNuALwAHgAJqAJgALwAPkBDw@Fq@Hu@H}@Jw@J{@Jm@Jo@Lw@Jm@VkANw@Lg@Pw@Ng@Pm@Le@L]V{@^_ATm@Zu@Xq@^w@nJuQl@kAl@yAd@sATq@d@{A\\{AXoAZiBR_BF_@Da@LgAHeAHqAFuADqA@sA?sAAqAC}AGoAE{@?sBMcCeBeb@OgDYmGAUKiBo@aPMeCEmBCkB?kA?mABeC@w@By@DaAHmAbGwaAHiAHkAfCcb@f@kHf@{HD{@F{@R{CBg@Bi@JsBXkER_C^kDNaAt@kGx@wFFc@t@{FbAmG~@mGb@}C`@cCLy@Jk@Jm@V_Bt@wDt@}Dd@_Cx@eEp@eCb@cBT}@BOzCmJfCqHvDoKdEsLdB{EpCaIrB}FlCwHlCwH`@gAvCuIv@uBv@wBl@eBfAaD~AsEjAaDfCoHjDsJbByEhCoH\\cA|BuGvBgGpAqDtBwFpBqF~@cCvDiJ\\{@f@aARi@Zu@x@cBrCaGP]P]v@cBrAiC`CuEdAsClAeCVa@tAkCzCgGbAsBb@w@pCuFtEeJbDwG|EwJfDuGpC_GrAaCrAcC|CsGz@kB~@qBz@eCn@_C^kBPsAj@{DBOXcC@G@GBWDSHc@@AFSLe@Pk@d@wA`BeFd@iBZgAXw@r@eBdB}DjFuLb@aAh@cAl@gArAeBrCeEj@y@rCeEzAgCPYPWb@w@rCqE|A{CvA{DNk@J[H[`A{EHa@H_@rA}HF]F]\\gDPcCHmBDgBBuB?cBEqB]_XYmSAoAQ{LEsCIwFI_HCiC@uGB{CBmAFaBP{ERsDXwDXmDj@cFBWBYfC}Qx@uFh@uDp@oFr@oGbBmOt@uHB]B]bBaPdAoJNuARmBRkBzA{QrAgLjBqP|@_JtCsW`E}^pJo{@pDq[fAkNvAo\\t@op@NsP@Q@s@?u@@_@?_@BgDBqBC}C?YHmAByAN}ADOVsAv@aDn@uBZoA\\iB?g@Ds@J{CJcDBw@NaBd@yDd@{DLaAPaAZkALa@P_@l@sAf@mBPy@N{@J{ADwA?cAAgAE_AEk@AGMu@@CEQEYk@qDO_AI_AC{@A{A?mADyAJeAJq@zAaJNc@h@yCnAeId@qDFu@DeAFiP@{ALiBT}Bj@{DvAoJf@uCTgBX_DFeABgA@wBGgEGaCK_DMmEKkI?WAWSeFAc@Ce@QsFGyBC_BA{BDiBNmCD_@D_@b@kCb@_Bt@wCv@wC|@eD\\{ANaAReBHiADcBJkDLyDNmG?yGGwEYsFYcH[sGC[u@iFa@cDIgBGoBGkC[kNGoCAaBBqCb@wLHeDA{AG{AgAsMo@oHm@oGEYCYw@aISmBGo@{AmMkCqYC[Gq@Gw@yBwVGkC@uBHoCTiCZgBrDoNf@_DTuBJaBZcGJcBV{BzAkHRcA^oBRsAJsAHmBBuBGqCkBaa@AWAU_@wIOyCYyFwAyQIu@_@cDGm@SmBo@yGi@_EYaCUmAi@wBcVmz@a@qBa@oCS{BQeCMkCEwEDkDRoEVuD\\mDRcC@CZeB\\{Ax@sCVu@^iA\\{@xI_Tr@}Az@iBt@yA~@aBvA}Bj{@imAxIcMRW`@k@lCaEzB}C`EsFtFmIvCkEdE{FbFiHzAsBpAgBrIcLLMTWbCeDnAsBxByC~AwBf@s@pG{IbCaDLQJOhEmGrAoBhGwIv@gApK}NlKaObAuA`B{B~CkEvEwGNUJMDIfFoHzE}GHKpFsHnCuDn@_ArByC~HcLfFqIRa@xBwD|FuKvA}CnGiNRg@Ro@Rk@lDeJ|FmPrCeIbBsEhCoHjAeDDKdE{LNc@\\aAxEoMxAeEfA}C`D}IhCgHh@yAnB{Fd@sAl@gB|AuEhBmF|BwGbCuHL_@J_@bCqHNk@l@oB^kADMDIjAuDRm@jBsGp@qCbDqNbAkEhBoItAwGvAqGl@sCvAcHtNcp@`@gB`CkKRyADURaAvA_Ht@gDt@kDt@yCv@gCXk@\\m@J]zA_C`AmBz@eBv@yA`@}@DG`@u@x@_B|@aBdBmD~@eBt@yARa@tC_GXm@LU^o@dAmBd@aAP]d@aAh@{@v@_Br@uAhAwBrAmCj@gA`AgBpAgC|@kBFIfAyBnCeFhA_C~@kBz@_Bb@w@`@y@lBsDhA}BbCuEz@_B~BiEn@qAhBmDbAkBb@y@v@yATc@R_@@CllAu~Bd@y@jA_Cv@wAx@{Aj@gAn@mA~AsCv@}AtBeEHS`AiBlAcCTg@n@mAXk@Xm@Tg@Vq@Pi@\\aALc@Rm@Lc@H]Nm@Lk@Lm@Ha@Ny@BOFg@PeAPcBN}AJkAL}AFgAHiBF_B@}A?K@g@?o@?yB?_AAs@AM?_@KqDEoBAcA?M?O?kA?_@BmAJ{BLkBRmBNiAPiALw@H_@Pu@Rw@\\uAh@mBhAsD`Rsm@z@cCr@qBb@kApBcFN_@Pa@HMb@y@d@aA^s@n@kAfCeEpAoBtAoBHKHKv@_AvA_BjAuArBoBfBaBrDyCjCsBlCwBfDgCrEmDbBqA\\Y\\Y`CqBtBaBfBsApB}AnAcA|@s@dBqAh@a@bDgCbBqAxDwC`CeBdCqBfCsBvEoDvB_BxC_CxC}BdEaDpB_BHGLIjCuBpDoCpBwAz@g@tBgA`Ac@dAc@xBy@`Cs@pBi@dCa@jHy@pKkAPCRCdAIRC`@ENAJANA~CW~HaA@?RCHA@?DAJAJALAnCYjAM`Ee@|IaA~Di@r@KtCa@bC[dC[n@IB?PC@?vEg@pIgAhD]NCLAdEe@hFm@fFo@hDc@fAWd@Gh@GnBYjDa@dEc@lC]hH_AzEk@vBUxCQ~FUjG[|AG`@CTAnH_@bH[bGU`BIrBO~AKr@En@EjAGx@Ev@EjH]ZEVArDOL?L?j@Ap@El@ErD_@|@OPGnAWnBo@z@Y|B_AtAa@`AY`AYzA[|@QnGc@rES~ACvCCzCLt@Fx@LlDZhK|@nCZtBRnAT|@Nv@VnA^hEnB`Aj@~@l@lAbA|@x@nArA|@`Aj@r@n@|@b@n@\\h@`@r@JNrA~BjApB`BtCbAhBx@nAx@~Ax@xAZh@LRLRdDdGhBbCtBhC`AdAjAjA`A|@pAhAfBrAzA`AxA~@jBdAxAz@~BtAvBhAxDtBx@d@z@f@h@Xj@\\n@^j@Zf@Zp@^b@T`@Vd@V|BrAf@Zd@Vj@Zv@d@h@Xn@^l@\\l@\\l@^d@Vh@Z`@Tf@T\\Rd@TzBpArB`AfBn@^LVHTHVFfAVzEvAXJlA`@nErAt@TtAd@xAd@rBx@bAb@xBjAvBvAbErChDvBPJZPTJ^RPHb@Tl@XXLd@R`@Nd@Rf@Pd@P`@Ld@NPFZJd@Lj@Nb@LZH`@H`@HZHb@Hj@Hj@L\\Dd@Fn@Hj@HXBnDX~BPvBPbBJxCPD?bETJ@t@Fr@DhAF~EXpETR@P@~BNjCNT@T@d@B|AJnETlAHnAHfADF@b@DL?|@HjAHdAHj@Dr@F`AFf@DL?v@BXBj@Bx@BbADjA@|@CpACbAEx@CdAEfBGd@Ad@ATAtAE~ACtEOh@Cn@CvAEP?LAT@Z@t@PNBPF\\PPJD@RH`@RHDf@XXP`@Ph@b@\\^PRtBbEfBnE\\]"
+              },
+              "start_location": {
+                "lat": 47.377923,
+                "lng": 8.5401898
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 46.85308000000001,
+                    "lng": 9.528924999999999
+                  },
+                  "name": "Bahnhof Chur"
+                },
+                "arrival_time": {
+                  "text": "10:52am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501577520
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 47.377923,
+                    "lng": 8.5401898
+                  },
+                  "name": "Zürich HB"
+                },
+                "departure_time": {
+                  "text": "9:37am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501573020
+                },
+                "headsign": "Chur",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Schweizerische Bundesbahnen SBB",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#d50000",
+                  "short_name": "IC",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Long distance train"
+                  }
+                },
+                "num_stops": 3
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "83.9 km",
+                "value": 83917
+              },
+              "duration": {
+                "text": "1 hour 47 mins",
+                "value": 6420
+              },
+              "end_location": {
+                "lat": 46.533765,
+                "lng": 9.873635
+              },
+              "html_instructions": "Train towards St. Moritz",
+              "polyline": {
+                "points": "w~}|Gwbdy@c@f@d@hAxAlDx@hCZfAHTBJ@FJZPr@b@`CD~@Fn@~@tLFt@Dn@@j@@j@B^Jl@?HLrAVhCRtBBP@PF`ADr@BrA?JFtA@XBVJnAd@pE@`@?`@D`@F`@l@|EFl@Fl@D\\BZDb@Ff@Fh@Hh@P|@Pz@Pn@L\\L^nBbFXp@Zp@t@~AxBbFfA`Cf@hAdA|CPr@Jd@R|@TpAPlA`@xCd@lDDb@Hp@N|BH`BV`KBhB?dAAZ?`@Ev@Cb@E`AEt@Gz@Cr@?b@Ah@?|@@p@?XFjA@N?NDp@Dr@Dd@l@dF|@`IfBpNhAbJXfCHh@Hz@PvAThBN~@Lz@Fl@TpAPjANtA^~BLpAz@bFHdARnA\\nB`@fCRjAn@zDvAvIlBlLbAjGdCnO|CvQdBfKd@zCLr@Lp@|@tFXjA`AbEx@hCz@~B^z@`@|@pAjCtBfEjBxDR^j@lA|BrE~@jB\\p@hBvDLV`BfDt@vAT`@tAlC`AnBt@jBp@fCh@rCb@lDVhED~BAlDExBCt@Af@Ah@Cl@@l@C|@A\\EbBGnAC`AAn@Ar@@r@Bx@Dl@Fh@Fd@Hd@Hb@Fb@H^`@bBf@tB\\xA`@fB`@`BPz@P`AZjBNfAL~@LvAFn@Hz@Dt@HlAFvADbABv@Br@DhABh@D|@Dx@DxAF`BHrBFpBFhBF`BFdBDbBH~BJxBFzBFdBHhCDlAHhBDpADnADnAB|@?FDbAFdBDfABr@B~@Bx@DdADl@Dt@Dv@Lv@Jn@Nr@ZbAPd@Xl@Vf@Zf@`@f@^^j@d@l@\\l@Vn@Rj@N@?B?\\V`@Vl@^b@b@x@fAp@vAd@lARl@Tj@L\\Rn@H\\D`@Jp@F|@Bl@Bd@?TBLBVF`@AH?b@Br@H|@RjB?DD^Df@@d@@Z@h@HjF@v@@`@@T@R@t@B~D@bB@L?@?L?@?XAZMnC?FIhA[nCYdCi@bEKlB?l@?T@d@JvBFhBFnADt@F`AHdAB\\Db@FXPh@Xl@HPf@x@JLHL`@^^j@NXHNNb@FVDRFT@TDXBR@X@R?x@@d@@`A?dA?pCBtC@~@?bA?dA?b@Ct@ARCXCPGXKVMb@Ol@Kd@Ij@CVAV?T?^@^Bd@Jx@Jh@Nj@Pd@L\\VZPTZRHDTJPBZBNBR@XCVAZGb@U^Q`@WXWXUTUX_@XYPWRYZk@Pg@Fc@Dw@F}FBm@Lw@Jg@Xu@LWTWJONMZSPI\\Mb@On@M|@M~Bc@xBa@~ASpAOpAU~B_@v@Ov@U`@QTKDCl@c@~@}@DET]NSHONWN]L[Nc@hAaDbAcDBG|BsHh@aBpCeJFGFGJIROPKLEREL?RAV@t@FjBPlBPl@F@?rCXnFn@hDTv@Dx@Bj@C~B[hCe@nAWp@ERAPAh@Ap@@rCV`BPhAHh@BXBF?\\@vADVCXCFCXGZITIVKZQTOTOZ]b@i@NU`@s@Tg@^iAZaAXu@Na@Rc@Xm@Va@d@m@h@e@b@]j@[p@[d@O\\G^C^At@A`@A^?^D\\DnA@f@?t@O|@[p@e@r@m@r@s@x@}@fAiAz@w@Z[x@k@z@_@`@QXITC\\Et@BjBFpAFP?dBJdCB^A^EtAW|@_@z@a@h@g@p@o@\\g@V_@Vg@Xq@b@k@h@e@TQl@Wx@St@Ur@UdCm@bFq@jGw@j@Kh@YTOZ]Xa@LUZq@Po@Rq@J]Pc@Tk@PYTQj@c@n@k@^i@b@i@tAiCzBeErBcGL]lEoMRYR_@V]ZQtDiBn@c@v@q@d@Ub@MbAWhAK|BIbDO\\AdAAr@?~E?jBBjBB~@I~@SrAW`@KdBe@dBq@\\MZOVKhAa@tAk@nAi@|@]rB{@nCiA`Ag@pDyAjD{AbJyDz@a@vKyEjGqC~FeCdCeA~Au@~@]tAo@vB_AdBu@tAm@nAi@`EiB\\O`@QxAo@rAm@xAo@rAi@pD{AhHqC|CkA~L_FtHwC`A[n@Mf@Cf@@f@DRDZFh@TxAd@HB|@X|ExAxAb@|@XpA`@vC~@ZJlDrAnC|@LDTHtA`@jElAjJrCtDlAdA\\fBf@bBj@l@Nr@Lj@Jt@F`A?r@C|@IdASp@OhAc@nAs@f@]r@i@\\]Z_@bAwABEZc@r@oANWj@}@Vi@x@gBhCyExAqCnAaCR]Zc@`@i@r@{@bD{DjD_EbBqBhD}Dz@aAdAqAZ_@BAXa@Z]HG`@[RMTKTETEf@Ad@DZJRJZRfBpB`CdCn@r@X`@vBlCn@n@j@`@\\P\\HXHXD^@\\Cb@E~@[tEaBrDyAvBcAZMJELEVIdDaAlA]d@Mp@KlAEnACxDI`H]h@Eh@IjAQ^?^EVC`@Iz@Qd@Kj@UrAa@p@UrAe@@Ab@Mv@UPENGVQLIBCbA_@RGRITGZMRGTIb@SJG\\QNOPQT]HSJUJWLg@Ns@Lq@Jg@Hc@VsAPuAFs@@I@a@Ae@Ek@Ks@G[IWGSO]EKOW[k@]k@OWKUIYKYIUGQQ[Qo@Oo@cAaDi@sAk@iA{@iByA{C[m@ESEMIk@Ow@SiAKg@Oe@]{@]y@Wk@OYcAaE}AoGw@eCK[KSEKeAkBUm@eAeC_ByEa@wAqAqGe@uBWwCYiDSyB]eEOkBYeDQcCCgC[iEGaBDcA`@aBbAsAv@g@`A]nBK~DbAfAJrAk@l@m@z@oBn@oAd@S`@A`ALr@Uj@i@Zk@\\uAJ_BA{C@uAIgCyA{EcBaCo@cAg@yA]oBKyBT{@|AeAjAqAlAmAz@y@d@oA^kBj@o@rAO~@Kh@U\\_@x@uHj@_C@qN`@mCz@cFdAuD~@mORmCTqBNw@J]N]Ti@X_@d@[h@]z@g@d@a@Vi@Rs@Dq@@g@@o@He@Lg@Xy@Tk@b@o@dC{C~BoC`AiAbAwA`AsBjAoDl@sBv@uCbAcFzA{INa@^c@f@i@Z]T[NYRe@Hc@D]Dm@Dc@Es@[qAW{@Oq@Qq@KeACc@Hq@Py@\\s@Xk@l@kAl@_An@}@fAyBv@yB|@qCt@qCl@wCx@sDt@{Dl@gDX_CNeBDcA@eAQiC?i@Je@T]p@m@`@g@Tm@Ry@p@mCj@_Bj@iCRu@^wA@C@?X}@Ng@FSJYRo@Lg@Je@D]B[@WFe@Lc@H[P_@R]PYNULQhAmAXYVUPSLQTm@L]Fg@Fa@?k@@a@A[AEA]CWCQAIEQ]yAMg@I_@S{@CM?EKq@?CAOASCiBBk@Bc@Dg@N{@Pm@FWTmAD]LwADaABm@DuA@GBYF_@Fe@Jk@L}@P}@RqAJ}@D[BQ@SBw@F_BBi@Bi@Fq@DeAP_EFi@N_ADYN]^_AVk@Xa@d@k@LYNQZi@hAiB`AeBx@gA|@eAzBwDh@cAjBeF^cA~C}FzG}QJ[FOFOFOJOJOLUJMNOJKPKHIJEJEJELEbAc@\\SVQLMNOp@u@t@{@b@g@Za@LS\\o@f@kAT_Af@iBLk@Nu@Hc@Jo@^_BDc@F]Ja@J]J[N_@N[Vg@x@gBVe@Zk@Vg@Pa@J]Zq@Rm@HMLSNYLYN_@FWFYF[BWBW@YDq@D_@@Q@[@c@?g@AWAa@CYEUEQGQKWK[i@sAKQ_AeAGIMO]_@a@i@W_@MWGMCKCKGUI]EQCQCUAQAQAW?]@w@?Q@MBOBSJo@Ho@Lw@Hi@FYFk@D[H_@F_@DMBMFOVo@Vi@b@_AP]R_@PWHKJKPMLIJEJCr@SxA[HCl@K^Ql@_@RSTUHKJSHQFQHQbBgF?A`@oAXaARm@Jc@Nc@Ha@FQDMFYF[BS@O@S@S?W?]Ce@C_@Ga@G]Ii@CSE_@A[A]?Q@_@B]BSBODODSHWFOFONWJQRWX_@f@w@P[LWFUH[BQBU@Y@QAe@ASAWG[IWOa@[q@]{@Ys@Uu@Iy@Em@?e@Bs@Hq@Lu@L{@L{@TyA`@kBNaAL}ANy@La@Ra@f@{@@At@y@BCJMLMBI^y@J[H_@Fa@@[Bi@@e@?e@?a@Ag@A_@?a@@[Bc@D_@Ds@PeBDsA@cAAwBAiC?mD?_@?_@DoB@_@?[Ew@Ck@QaBGcAGm@Au@@iBFsC@yA?k@Ei@OsA_@{Bc@oCg@cDk@mBgAgCe@oA]u@MSQWKMSUSQWOk@[{Ai@QGOEOCeAGw@G]IQISQQUY_@m@_Aw@eAeAeA_@m@Qa@I]Ia@E_@A_@Ae@FgALmBNyBd@_IFgA?s@Eo@Ig@GYK[Sk@MYKW[aASy@[uAG]Gc@Ec@A{@CoBAoAAy@CqAAsAAUASEWKm@M}@O}@OgAKcACi@Au@?u@@i@@]B[D[H_AVmB|@cHJs@Js@Hc@Ne@Vy@Tg@dAqBd@aAFMn@{A^{A\\cBJo@Ly@Fs@Fw@F{A@qACsAKsCIgAMeAMeA_@qBUgAS{@]aAc@_AaAmBgBuCU]U_@[{@GSEOQ}@e@yCy@{Fc@cDg@{D]wA{@aD_@kBKaAMkAKsAGoAO_ECm@?q@Dq@Hu@RuBZwDH{@Fs@@q@EcAK_A]cCMs@Ok@Oe@Sk@Wg@We@MQa@e@uB_Co@o@_@g@OUO_@Ok@Mu@C_@A[?[?mA@a@@i@Bs@@kE@y@A{@G}@Is@Mk@WgA[gAa@yAK[OU[o@]q@]i@w@iAu@aAMOOQoBwBqAaBk@aAi@wAy@aCy@mBi@gAW{@_@{BUoBU}CGiAMs@Kk@K]Wg@a@g@m@e@q@k@}@}@o@_Am@eAOWISs@gBkBoFw@cCGWIi@Es@Co@?mAC_ACi@Ie@Ma@Ys@UYY_@g@_@WQ[[[]Ue@Om@QuAEu@AkA?o@Gu@YuBMk@Ok@UeAc@aCM}@Iy@Cm@@q@Jw@Pm@Tm@f@w@NSNKRGP?NDPLh@r@j@n@j@b@tAjAtARz@N^@j@Kp@]p@a@v@Yb@I\\?^BdATdANT@XA`@Gf@QxA{@b@QTWX_@Tg@Ro@Hi@Fg@@m@?i@Gy@Gq@G[AAGYIOYc@_@m@m@aAUi@Og@Ko@IyAAWG]Gi@GmAOaCAWMwBO_D?qAA_@?_@KyAE{@EsA?aAAi@Do@Nm@Lk@Lk@Ho@?y@QkBQcCA{@@]DYDi@Jg@j@}@l@s@p@e@tAu@b@]lAiAbAg@t@]r@e@d@k@\\s@Z_CAy@Es@W}@e@k@eB_BsCeCcCmAoBWaCMeBZm@r@k@xBa@`CShD?`DRvBbAzAz@^vALbBk@r@s@Xe@nAgBx@u@tAg@t@_@T]TY\\e@P]\\s@Vi@b@c@z@e@rBk@~Bs@v@_@j@c@p@m@h@a@f@Oz@?RC~@CVDVBXA|@[jAi@dA[|EiBjBu@rBs@l@Or@]l@k@Z[Tq@@_@OcAAeB?m@Jg@V{@Dg@@i@Ck@Ic@Oa@E]?a@De@Jc@Vu@nAkBlBwBXO^Od@Ob@GZBLANFZ`@tBtCVZFBFBFGXWj@w@@E^g@d@_Bj@cDr@sDh@iBXuARu@b@{Aj@eBdHiYx@sDb@_CH[LWx@}AV{@PiAPkBV_CVmA`@eAb@{@ZeAF]@UDg@HaAFa@Lq@La@JWXa@f@e@z@u@d@y@\\s@ZqAVaA\\uAHUNSvDwC^Ud@i@^]v@s@h@Qx@KlAEpACv@]l@SRMBApDoAbAa@ZOPST[Rc@l@yA`@_AdDgGRo@Pm@Pw@`@}AXmAlAkDxC}Ht@qCZeAn@_At@o@f@]XUb@e@`@m@b@g@`AsAZq@jAuCf@kAP_@X_@b@_@\\Wv@Ov@?h@ZhAf@r@l@|AFfCBnABhA]f@m@Zu@dBiEd@mB`@eAVa@r@UbDGFCJUVu@d@aBFU\\aAfAyA\\e@~@kAv@_CpAuDN]HQx@y@b@k@Tg@Vm@T_AfDuJ\\}@JSZo@HObA_A|C{Cz@y@DEtB{BLYFWLq@@CPmAR}@\\qBReA@G@EP_@@EXm@LQNMJGPKl@SrAY`@Ef@GF?Z?d@Eh@Sh@e@b@{@d@aAp@iBZi@`@_@b@SjA[B?^@FBPDPFNHFDNJhAhAr@n@r@\\VBX@h@MhAe@hAo@\\Oh@IxA?|AJlCHjAC\\ETKVMTUTYPWTs@H_@Bs@Ac@Ka@Q_@[][MSGyBOs@Ag@Jy@`@iB`AUHe@LYJa@Dc@E]Km@]e@o@[g@Sm@]qCMeAKo@QcASe@QSq@i@u@]k@Eg@@w@@m@@]Ha@Je@XaBzAm@n@m@d@a@Ti@X_@Bk@Ak@Qo@g@Y[We@Qu@Gu@AwA@cAF}@`@eBXo@V]XOn@Bd@DrAl@h@j@~@tAZZ\\RRDP@x@HR?|Es@x@AnAEr@IfAQh@KVCb@?Z?XLJJLNxApCtAjCf@fAn@xAZh@T\\\\VZNRF\\@h@EXI^KTSNKPQZs@ZcALk@RaAt@uBlAaDv@kBVi@H_@Jc@Fw@By@@_AFcABYBUVuAf@wBJ[JU^e@^[LIPIh@Mh@GzDCzFCdAJhA`@tAdApAbBlAjAp@j@j@Xl@@`AI|Bi@b@CfAKj@NvBlBpCrCpOxJdBjAz@z@f@j@`@\\`@TnAXxATdA@jA@x@Dp@Z`AnAl@pARn@J^J^ZvB\\hANz@FnA?|AIv@Ot@Qf@]h@e@n@q@b@m@Ng@Do@Cs@Ue@_@k@o@Yk@Qe@Ou@Ii@EgA@aAPsAXw@d@k@v@]p@?z@NbAf@TJ^J^FrAI|@G|@Wd@Yl@]d@_@xAcBdAqAf@}@Pi@PcABUB[B[N{ANwAPw@Rk@Xe@VUj@Ub@Kd@Cl@Dv@Xr@Z`@FZFR?TCVG\\IPIFGZa@Ve@Ne@Lu@Bw@CcBG}@SoAOg@[g@YUWMYGYA_@BSH[TUTU`@Md@I`@E^A^?f@Dh@Hb@Ld@Vd@TXnADd@F^L`@Nt@v@LX^x@FRd@rAd@bAf@l@ZTf@R`@Df@AZG\\MTSb@i@Ve@Pk@X{AHo@Dk@@o@?e@Ea@C_@Kc@IW]s@Yk@EEYc@aAm@i@Ys@e@]_@CEcDuG[k@OSUQOKUIUGWEi@@]H]Na@ZWR]t@M\\I^If@E`@Ab@?l@Bd@F\\Jh@ZjABBf@^h@Pt@Nf@Dp@@\\K^Ql@i@^i@JUPi@Pm@Pk@P_@f@g@\\OZGbAE~CEvA?^Ch@Wl@k@Vo@Po@L_ALwBFmADe@Hc@Ji@JWP]@ABGBGZi@|@aBNc@Pk@D]Fu@D_A?u@?]B{DN{EFgDDqBD}CBs@@eAFcABg@Fk@Nq@Tu@Vi@h@w@n@k@LMLMdA}@j@i@TSPWPWT_@Zq@Vw@d@}AdBsF`@mAj@mAL]La@niDkyK\\w@~E{OLa@Nc@^yA^aB`BgJpCeRrCsOt@iD|@wEx@{DbAgFj@cEN{CJ{C?oCDmAFcEHaCRsBR{AXcAt@oBv@kBb@{@hAqC`ByEhC{I\\mAZmBl@kFPu@FiBWuCOw@MkAEoAGiBHwC^cKJaFBuA?o@?o@@iA?aH?uH?sNHsCBYBUFOFOJUV[BELMHGPKJCJCZCRAZ@VD@?LD\\HjKpE^TXNNJZVJDtAn@f@VPJXRb@^^\\pFpFn@n@TVbAbALJJLJJz@z@|A|ApBpBzA|Al@l@`@`@dBdB`A`AfAhAn@l@r@r@h@j@hAhAZZdBdBd@d@j@n@~@`AdAjAfAlAdAhAxEfFn@d@v@z@PPNPn@f@v@n@x@t@t@p@t@p@tBzBRXDF"
+              },
+              "start_location": {
+                "lat": 46.85308000000001,
+                "lng": 9.528924999999999
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 46.533765,
+                    "lng": 9.873635
+                  },
+                  "name": "Samedan"
+                },
+                "arrival_time": {
+                  "text": "12:45pm",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501584300
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 46.85308000000001,
+                    "lng": 9.528924999999999
+                  },
+                  "name": "Bahnhof Chur"
+                },
+                "departure_time": {
+                  "text": "10:58am",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501577880
+                },
+                "headsign": "St. Moritz",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Rhätische Bahn",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#d50000",
+                  "short_name": "RE",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Train",
+                    "type": "HEAVY_RAIL"
+                  }
+                },
+                "num_stops": 8
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "5.3 km",
+                "value": 5308
+              },
+              "duration": {
+                "text": "7 mins",
+                "value": 420
+              },
+              "end_location": {
+                "lat": 46.490648,
+                "lng": 9.896077
+              },
+              "html_instructions": "Train towards Pontresina",
+              "polyline": {
+                "points": "_s_{Ggmg{@RZ\\\\n@t@X\\b@n@X^l@l@f@j@Z\\ZZTRRJVLRD^Fh@AJCXGDAr@OFCt@SZI\\KvDcAzAa@`Co@lFwA`EiAxDcAhD}@rCu@pHqBfKqCvBk@dHkBhFwAbG_BfEwAjBo@^Mn@UHCzAk@VGvAi@v@Wv@a@n@_@n@g@rAqA~AaBfCmCf@k@z@}@^]^]VOLIJEFC`@GRCN?Z?^B`@@V?R?j@ARENERGZSTQPSX_@NYLYL_@HWVaAXaANa@Ta@h@m@RQn@[~CkAvBw@`A_@l@Yn@]`CqAfB_A\\S`CsAtBgAJGRKpDqBhAm@hAq@`Aq@bAw@hA{@jB{A~@s@v@m@vAiAjCsBlAaAzBkBvAcBbAwAdAwADCJKHKbAiAHGxDuDl@a@r@e@TSxCyC"
+              },
+              "start_location": {
+                "lat": 46.533765,
+                "lng": 9.873635
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 46.490648,
+                    "lng": 9.896077
+                  },
+                  "name": "Pontresina"
+                },
+                "arrival_time": {
+                  "text": "12:55pm",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501584900
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 46.533765,
+                    "lng": 9.873635
+                  },
+                  "name": "Samedan"
+                },
+                "departure_time": {
+                  "text": "12:48pm",
+                  "time_zone": "Europe/Zurich",
+                  "value": 1501584480
+                },
+                "headsign": "Pontresina",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Rhätische Bahn",
+                      "url": "http://sbb.ch/"
+                    }
+                  ],
+                  "color": "#283593",
+                  "short_name": "R",
+                  "text_color": "#ffffff",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/ch-zurich-train.png",
+                    "name": "Train",
+                    "type": "HEAVY_RAIL"
+                  }
+                },
+                "num_stops": 2
+              },
+              "travel_mode": "TRANSIT"
+            }
+          ],
+          "traffic_speed_entry": [],
+          "via_waypoint": []
+        }
+      ],
+      "overview_polyline": {
+        "points": "}c|wG{ihn@s~AmnAi{@_n@yrAid@{zBoXopBeLwyAol@{rBmSajB`Fow@iOev@{c@av@aUkaAoi@k~Be}Ba|A{pCcb@obAkP{o@aWwE_mAc[qfB{NohAaTehB|TkkAleE}G~~@m~B|qFqjQ~jNomHvhIsiBr{@idCZw{F~rA}iBzA_mBql@uo@uJeh@}Mus@_bA_{AobCefAc_@evBnc@}gBb|A}HlBkd@_v@eXas@gRjMo^fm@eIpYsMdx@iz@rcAy_B|xCs`@zu@ch@uGypBm|@yYwHc`@vb@cZjiA_zA`vBapAxfAwaBf\\swHr{A}uEfkAanEb|C_kAdgC{fB`iC}eAdZw]rhBpf@loBbk@lOfWtMmQkIqf@mKgm@mdBe\\wcAs_Ap\\q_Aod@gbBymFy~FgkCsmAofC}x@qeAeaCyr@irEku@siB}q@aiAyvAuzBcwF_`CmtEyzAugLweCg_GovB{gCqa@cgBkwAqoC__Dcl@sZg^{_@umAuXopAmwAql@m~BewAiuAqMaL{vAjs@_qFy`AcqDepAo}@iwBiqJi_A}gLriA_{FaMkgEmq@yh@wx@gcBs|A{yDqdAeqNj_@eyCzw@qoCfvA{dC~n@g`@bOsdA_CeqExh@a_EjhAmvGhPgs@{CjToCnMyEz[jYbo@ly@c{@fbBg]lnByx@ndCw_A~uBa~AjaB}hA|gA{u@|^ycApu@krC|t@{lEdgCa_EdoAi|Bzj@_m@pDesAc[q~AkJspA~YwmDnLg~Cdk@a`BjNugA@muCvs@kzFlb@sbDv_@mlJxzDo`Kpo@keBdZkeDrsAcsPdReeFxDahDkBakEwf@qqFvfDwjFvnCo~Dz~AkoEj_CggHdoCgsG|h@k|BfhBw~A~oBsv@nfB_TfbCgPtnBtBx`CztBpfCvn@dmB~Vvg@vmCtr@zfGpz@vyD|EntA~Wdk@jGnkBnAjj@fPdIjoAokAhy@wAhd@eZpq@uWjy@m}@|aFwaBtyAh\\fx@oeA~v@xElu@_MwSw~AeQecAnZwYkAol@fYwz@bh@q|AtVcjAtXo_Brp@}`Cx`@ecArI_s@rO}zDs[ma@gE{_AtLseAsUa~Acn@}yBeWiw@BaZfU|CvHq]xEs}@yIg]}CjZdP}GbWgQr_@kLtRoYhb@wbBzk@}f@|p@a~@dpAgdBzj@wHsVqVwTnCmA_Spm@rVhWwl@vzAzl@}DpWjB_Qpb@_YsBsF|Vq@cX_Fta@uUxLi|@xyEykPzSmvCh_@rCzaBl|AvyCslAd_B}iA"
+      },
+      "summary": "",
+      "warnings": [
+        "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+      ],
+      "waypoint_order": []
+    }
+  ],
+  "status": "OK"
+}

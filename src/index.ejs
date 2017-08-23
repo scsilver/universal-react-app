@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  **NOTE:** This is a template for index.html. It uses ejs and htmlWebpackPlugin to generate a different index.html for each environment. htmlWebpackPlugin will dynamically add references to the scripts and styles that it bundles to this file. The generated bundles have hash-based filenames, so it's necessary to add the references dynamically.
+  For more info on ejs, see http://www.embeddedjs.com/. For examples of using it with htmlWebpackPlugin, see https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs
+  -->
+
+<head>
+  <!--
+    The htmlWebpackPlugin will parse the logic below so that trackJS is only added to the production version of index.html (since only webpack.config.prod.js provides the trackJS token)
+    This is an example of how to add features to index.html for only one environment.
+    To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token in /webpack.config.prod.js on line 55.
+   -->
+  <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+    <script>
+      window._trackJs = { token: '<%= htmlWebpackPlugin.options.trackJSToken %>' };
+    </script>
+    <script src="https://d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js"></script>
+    <% } %>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_O7dkvfLlFZ7DZYZPhEbLrJeG8br6up0"></script>
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8" />
+      <title>Fusion Starter</title>
+</head>
+<style type="text/css">
+   ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+</style>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
