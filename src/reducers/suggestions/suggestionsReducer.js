@@ -12,7 +12,6 @@ const initialState = {
   placesOfStay: placesOfStayReducer(undefined, { type: null })
 };
 export default (state = initialState, action) => {
-  debugger;
   switch (action.type) {
     case actionTypes.SUGGESTED_CITIES_REQUEST:
       return { ...state, cities: action.cities };
